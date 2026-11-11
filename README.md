@@ -2,13 +2,40 @@
 
 **[Open the public discovery demo](https://forge-relay-pearl.vercel.app)** · [Demo script](submission/DEMO-SCRIPT.md) · [Pilot evidence and limits](submission/PILOT-RESULTS.md)
 
-Forge Relay connects fragmented agent catalogs to explicit task requirements and reviewable delivery evidence. It aims to help buyers find specialists beyond one marketplace while keeping price uncertainty and acceptance decisions visible. The hypothesis that this increases accepted work remains untested.
+Forge Relay helps an agent obtain outside capability for work it cannot finish alone. It is an **A2A coordination prototype** spanning agent marketplaces: discovery finds possible specialists; requirements travel through handoffs; failed delivery checks trigger revision. Humans supervise approvals and exceptions. More completed work and provider earnings are intended benefits, not measured results.
+
+## Judge path: inspect one consequential decision
+
+Open **https://forge-relay-pearl.vercel.app/handoff.html**. This is a recorded local execution, not live agent traffic.
+
+1. **Request:** inspect the original acceptance criteria.
+2. **Handoff:** see the actual extractor → writer → verifier → writer → verifier sequence.
+3. **Reject:** revision r1 fails two checks after a citation fault is intentionally injected.
+4. **Revise:** compare the missing source URL with the restored citation in r2.
+5. **Verify:** r2 passes 26 recorded checks. The browser checks its artifact hash. The recorded state remains pending operator acceptance; no funds moved.
+6. Download the full evidence bundle and use the offline verifier below to check the complete bundle and snapshot consistency. The existing local demo additionally supports explicit exact-artifact acceptance.
+
+This is our bounded Swarms evidence: requirements and verification results change subsequent worker actions. The workers are separate deterministic processes, not independent economic agents. The broader five-role agent economy remains a development target.
+
+## Agent roles: intended architecture versus working prototype
+
+The existing FLOP runtime is neither connected nor modified. The roles below describe the design of the isolated Relay project, not five deployed FLOP agents.
+
+| Role | Working evidence in Relay | Planned capability |
+|---|---|---|
+| Scout | Public marketplace discovery; hosted snapshot | Autonomous request scouting and intake |
+| Bench | Artifact checks and operator-assisted evaluation record | Enforced provider qualification and reusable trust decisions |
+| Router | Cross-market proposals; deterministic local handoffs | Autonomous external dispatch and cross-market execution |
+| Sentinel | Input/session boundaries; limited artifact checks | Policy-based safety evaluation of requests and outputs |
+| Commerce Router | Operator-approved NEAR funding and delivery review | Automated payment coordination and cross-market settlement |
+
+Sentinel checks span the lifecycle. Verification does not authorize acceptance or payment. Citation checks are not a full safety system; listing discovery does not validate provider trust. The next proof is independent agents completing a funded handoff with an accepted artifact.
 
 ## Try the public demo
 
 1. Open the public demo; expect a dated snapshot with provider and public demand records.
-2. Keep the example research/extraction brief and click **Compare providers**. Expect candidate listings and single- or cross-market proposals with unresolved pricing and execution conditions disclosed.
-3. Inspect source links and download a proposal. Comparing and downloading do not hire anyone or move funds.
+2. Use **Try the working matching preview**, select an example request and click **Find possible matches**. Expect candidate listings and single- or cross-market proposals with unresolved pricing and execution conditions disclosed.
+3. Inspect source links; expand the pre-hire checks to download a proposal. Comparing and downloading do not hire anyone or move funds.
 4. The live pilot page is an owner-configured buyer integration, not public access to our private NEAR task. A signed-out visitor sees a connection prompt. Judges need no account for discovery or the offline workflow below.
 
 The production frontend is a filtered public snapshot preview, not the full local workspace. Authenticated buyer jobs, local databases and credentials are not published. The public site uses FRBL Labs branding, a white background and readable heading spacing.

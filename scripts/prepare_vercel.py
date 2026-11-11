@@ -31,7 +31,7 @@ def prepare(live=False):
     parent.mkdir(exist_ok=True)
     target = parent / ('vercel-' + now().replace(':','').replace('.','').replace('+',''))
     target.mkdir()
-    for name in ['api/index.py','api/catalog.py','api/match.py','api/health.py','public/index.html','public/app.js','vercel.json','.vercelignore']:
+    for name in ['api/index.py','api/catalog.py','api/match.py','api/health.py','public/index.html','public/workflow.html','public/handoff.html','public/handoff.js','public/sample-evidence.json','public/app.js','vercel.json','.vercelignore']:
         dest=target/name; dest.parent.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(ROOT/'deploy/vercel'/name,dest)
     if live:

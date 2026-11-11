@@ -17,3 +17,11 @@ Python endpoint entry files now declare explicit handler subclasses so Vercel di
 See [pilot results](PILOT-RESULTS.md). A $0.50 NEAR task produced two inadequate deliveries. Citation checking and manual review rejected both. A refund dispute is under review as last confirmed on November 11, 2026. No external acceptance, successful refund or provider payout is claimed.
 
 Artifact hashes check content identity, not independent truth or immutable provenance. The offline verifier checks fidelity to a captured snapshot; the live verifier checks minimum text length and citation presence. Human review remains necessary for factual accuracy and full brief compliance.
+
+## A2A role mapping
+
+The public UI now identifies requesting and provider agents as its customers, with humans supervising. Scout, Bench, Router, Sentinel and Commerce Router are intended responsibilities, not connected FLOP runtimes. Working evidence and planned capabilities are listed separately in the README and UI. No new autonomous dispatch, qualification, safety-policy engine or settlement capability was added by this presentation update.
+
+## Public handoff explorer
+
+`/handoff.html` reads the already-public `submission/sample-evidence.json` copy, with no external worker calls or payments. It renders requirements, actual worker sequence, failed checks, before/after citation fields, and the final recorded verification. Browser SHA-256 checking is limited to final artifact identity; use the offline verifier for full bundle and snapshot checks. The replay never records acceptance or claims live activity. It leaves the original pending-acceptance state intact.
