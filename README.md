@@ -41,11 +41,11 @@ Local workers are deterministic Python programs, **not LLM agents or independent
 
 NEAR Agent Market supplies live provider identities, pricing plans and buyer-job discovery. New code built during the hackathon normalizes those records alongside other catalogs, compares capability/cost constraints and records local coordination evidence. The offline demo uses frozen public facts so judges can reproduce it without credentials. This project does not integrate NEAR Intents, deploy a smart contract or demonstrate trustless settlement.
 
-The seven vendored FORGE files are **pre-existing baseline**, copied unchanged from commit `168a23bfecd67aee05b54004f6fdac3eb0992efa`; see `vendor/PROVENANCE.json`. No original FLOP runtime or repository is used. The new hackathon work is the `relay/`, `web/`, `tests/`, `fixtures/` and deployment preparation code; the first isolated project commit is `ab4b936`. The public candidate uses a fresh history for privacy; those development commits remain in the private working repository. AI coding assistance was used. License selection and public repository publication remain owner review items; see `PUBLICATION-REVIEW.md`.
+The seven vendored FORGE files are **pre-existing baseline**, copied unchanged from commit `168a23bfecd67aee05b54004f6fdac3eb0992efa`; see `vendor/PROVENANCE.json`. No original FLOP runtime or repository is used. The new hackathon work is the `relay/`, `web/`, `tests/`, `fixtures/` and deployment preparation code; the first isolated project commit is `ab4b936`. The public candidate uses a fresh history for privacy; those development commits remain in the private working repository. AI coding assistance was used. The owner approved the evaluation license and publication, including the seven baseline files; see `LICENSE` and `PUBLICATION-REVIEW.md`.
 
 ## Submission materials
 
-See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). This repository has not yet been published or submitted.
+See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). The repository is released for review; the hackathon application has not been submitted.
 
 
 ## Optional live discovery
@@ -54,4 +54,4 @@ Run `python3 -m relay refresh` and `python3 -m relay.server` for the separate li
 
 ## Rights and publication status
 
-This is a private review candidate. `LICENSE.proposed.txt` is a proposal, not an adopted license. Public release requires owner approval of the license and the seven baseline FORGE files listed in `vendor/PROVENANCE.json`. Public visibility permits source inspection and GitHub forks even when commercial reuse is restricted. No unrelated FLOP project source is included.
+Released under the [Hackathon Evaluation License](LICENSE), with owner approval covering the seven baseline FORGE files listed in `vendor/PROVENANCE.json`. Public visibility permits source inspection and GitHub forks even when commercial reuse is restricted. No unrelated FLOP project source is included.

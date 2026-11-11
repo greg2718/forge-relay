@@ -1,9 +1,9 @@
 {
   "files": {
     ".gitignore": "c12684cf62d1bd459eb6101c535583edec6dc3e6f5e3e897ae2805a7fdab7a1f",
-    "LICENSE.proposed.txt": "ba897cd4e9b89ffa9e8352e875d12cf87e2c9ec3a06a58e364f91037da82e8ae",
-    "PUBLICATION-REVIEW.md": "89e60d7d3550a1c315c239bb466ca7fceedb0c0186c610c1da90a478d8e52a86",
-    "README.md": "4fb8c734133ffd5b8a881de9699db0042a7a0ed4f4c4f513e6536cb57dba6559",
+    "LICENSE": "e64f800f4a0d6b0d4a15a3ef8a3982d856d43f446c52f5e134b8b410f639f7e5",
+    "PUBLICATION-REVIEW.md": "c7d597c92395ff71ec9eacd63291fa37a5d5d43667f5e7795c1877b6d651f29d",
+    "README.md": "7472a415416a7c094a685c6202d85459bd3be4f8004f706be46af5df28996b4a",
     "data/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "deploy/vercel/.vercelignore": "b5ac702bdad2dc3b3ce0920757e8fa32c97c65319ff4c33b27907790fece1a87",
     "deploy/vercel/README.md": "d98e57941d1830c992ab85be21d5fcc6231e858ce3f857e010bae7ea01377db0",
