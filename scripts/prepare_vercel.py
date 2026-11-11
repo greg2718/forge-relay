@@ -25,7 +25,7 @@ def public_rows(rows):
             and not (r.get('market') == 'near' and r.get('kind') == 'demand')]
 
 
-def prepare():
+def prepare(live=False):
     parent = ROOT / 'build'
     if parent.is_symlink(): raise ValueError('Build directory cannot be a symlink')
     parent.mkdir(exist_ok=True)
@@ -34,10 +34,19 @@ def prepare():
     for name in ['api/index.py','api/catalog.py','api/match.py','api/health.py','public/index.html','public/app.js','vercel.json','.vercelignore']:
         dest=target/name; dest.parent.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(ROOT/'deploy/vercel'/name,dest)
+    if live:
+        for name in ['live.html','live.js','live.css']:
+            shutil.copyfile(ROOT/'deploy/vercel/public'/name,target/'public'/name)
+        (target/'api/live').mkdir()
+        for route in ['connect','connection','callback','status','quote','prepare','refresh','accept','disconnect']:
+            (target/'api/live'/(route+'.py')).write_text('from relay.live_server import Handler as handler\n')
+        config=json.loads((target/'vercel.json').read_text())
+        config['functions']={'api/**/*.py':{'maxDuration':60,'includeFiles':'{catalog.json,relay/**,api/**}'}}
+        (target/'vercel.json').write_text(json.dumps(config,indent=2))
     shutil.copyfile(ROOT/'web/style.css',target/'public/style.css')
     with (target/'public/style.css').open('a') as f:f.write('\nmain.preview { margin-left: 0; max-width: 1400px; margin-right: auto; margin-left: auto; }\n')
     (target/'relay').mkdir()
-    for name in ['__init__.py','core.py','routing.py']:shutil.copyfile(ROOT/'relay'/name,target/'relay'/name)
+    for name in (['__init__.py','core.py','routing.py']+(['live.py','live_server.py'] if live else [])):shutil.copyfile(ROOT/'relay'/name,target/'relay'/name)
     (target/'catalog.json').write_text(json.dumps({'generated_at':now(),'records':public_rows(records())},ensure_ascii=False))
     (target/'pyproject.toml').write_text('[project]\nname = "forge-relay-preview"\nversion = "0.4.0"\nrequires-python = ">=3.12"\ndependencies = []\n')
     manifest={str(p.relative_to(target)):hashlib.sha256(p.read_bytes()).hexdigest() for p in target.rglob('*') if p.is_file()}
@@ -45,4 +54,4 @@ def prepare():
     print(target)
     return target
 
-if __name__ == '__main__':prepare()
+if __name__ == '__main__':prepare(live='--live' in sys.argv)

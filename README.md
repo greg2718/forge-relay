@@ -33,7 +33,7 @@ Expected CLI output: a unique run ID, `verification_results: ["FAIL", "PASS"]`, 
 | Verification | Row count, marketplace diversity, duplicates, every returned field against the frozen snapshot, citations, timestamps and uncertainty disclosures |
 | Revision | Optional, explicitly injected missing-citation fault is rejected; a corrected artifact is returned and checked |
 | Acceptance | Local operator receipt bound to the verified artifact and sealed run bundle |
-| Payments | Disabled. No paid outcome, onchain settlement or external agent fulfillment has occurred |
+| Payments | Offline demo: disabled. Optional live pilot: operator-approved NEAR checkout, with no automatic payment calls. External delivery and settlement must be verified before claiming a paid outcome |
 
 Local workers are deterministic Python programs, **not LLM agents or independent marketplace operators**. Discovery does not establish provider trust, availability, subcontract permission or full-job pricing. Hashes detect inconsistencies; they are not signatures or independent attestations and cannot prevent an owner from rewriting an entire bundle. Verification checks fidelity to captured evidence, not whether marketplace claims are true. The existing synthetic FORGE lifecycle rehearsal is separately labeled and does not establish settlement.
 
@@ -55,3 +55,9 @@ Run `python3 -m relay refresh` and `python3 -m relay.server` for the separate li
 ## Rights and publication status
 
 Released under the [Hackathon Evaluation License](LICENSE), with owner approval covering the seven baseline FORGE files listed in `vendor/PROVENANCE.json`. Public visibility permits source inspection and GitHub forks even when commercial reuse is restricted. No unrelated FLOP project source is included.
+
+## Optional live buyer pilot
+
+The separate pilot at port 8767 adds buyer OAuth, current provider quotes, a stable checkout draft, read-only draft/job tracking, returned-artifact hashing and an exact-version acceptance handoff. It does not execute other marketplaces’ providers automatically. See [live pilot setup and limitations](docs/LIVE-PILOT.md).
+
+`python3 -B scripts/prepare_vercel.py --live` builds a separate hosted package with durable Redis state. The offline quick start still requires no accounts, keys, payment, or network. Automated fixtures cover the full handoff; they are not evidence that an external provider has delivered work.
