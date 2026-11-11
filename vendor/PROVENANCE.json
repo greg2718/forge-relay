@@ -1,0 +1,14 @@
+{
+  "source_repository": "local FLOP Forge",
+  "commit": "168a23bfecd67aee05b54004f6fdac3eb0992efa",
+  "files": {
+    "forge/__init__.py": "d36875a44df4064533f9b4654b205f1fd7f37f6ca9d9efb4d47ae2f18acc1c79",
+    "forge/domain/__init__.py": "8add816835a18f5f193a0f602ade800cb1e747fce6c6df405e83142986a6b488",
+    "forge/domain/models.py": "573c1d50b2ce64442adbdd680d56565fa9d5a9b294750fa88d7764104d1758ba",
+    "forge/transactions.py": "e961faf68fcb320ad730dd9cee210879e3e9d3338754c1be480a40ece069b591",
+    "schemas/forge-quote-v1.json": "f89d73bb87a4e1fc435688280693611831c6a7f3d0bc76455009b9e2f2eb04a9",
+    "schemas/forge-transaction-event-v1.json": "8590fe745c13896f3e437d6df9083e1a606e6c85cedd701757529d1bae2024a5",
+    "schemas/forge-transaction-state-v1.json": "a699b8c25bcf7cc2cbaac6f938d9f8ffa0835b6694a3715bd60dabf1ea238421"
+  },
+  "runtime_dependency_on_original": false
+}

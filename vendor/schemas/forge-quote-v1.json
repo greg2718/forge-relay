@@ -1,0 +1,145 @@
+{
+  "$id": "forge-quote/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string"
+    },
+    "evidence_state": false,
+    "id": {
+      "type": "string"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "schema": {
+      "const": "forge-quote/v1"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ACCEPTED",
+        "FAILED",
+        "PENDING",
+        "REJECTED",
+        "SIMULATED",
+        "VERIFIED",
+        "DRAFT",
+        "SUBMITTED",
+        "VALID",
+        "INVALID",
+        "EXPIRED",
+        "WITHDRAWN",
+        "SELECTED",
+        "SUPERSEDED"
+      ],
+      "type": "string"
+    },
+    "terms": {
+      "type": "object"
+    },
+    "valid_until": {},
+    "request_id": {
+      "type": "string"
+    },
+    "service_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilities_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deliverables_offered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pricing_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "estimated_turnaround": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fulfillment_mode": {
+      "enum": [
+        "HUMAN",
+        "AGENT",
+        "HYBRID",
+        "UNKNOWN"
+      ]
+    },
+    "accepted_input_formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema",
+    "amount",
+    "currency",
+    "id",
+    "provider_id",
+    "service_id",
+    "status"
+  ],
+  "title": "forge-quote/v1",
+  "type": "object"
+}

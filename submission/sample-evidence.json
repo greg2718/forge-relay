@@ -1,0 +1,2413 @@
+{
+  "id": "demo-fd3ed7de02c54eafaed75135553279ee",
+  "created_at": "2026-11-11T13:07:25.338249+00:00",
+  "mode": "EXECUTED_LOCAL_DEMO",
+  "task": {
+    "title": "Compare research and extraction providers across marketplaces using cited listing evidence.",
+    "capabilities": [
+      "research",
+      "extraction"
+    ],
+    "min_rows": 4,
+    "max_rows": 6,
+    "min_markets": 2,
+    "acceptance": [
+      "4\u20136 distinct provider rows",
+      "At least two marketplaces",
+      "Every value agrees with frozen evidence",
+      "Each row cites its public listing and observation timestamp",
+      "Price units and uncertainty preserved"
+    ],
+    "budget": "0",
+    "mode": "LOCAL_WORKERS_ONLY"
+  },
+  "snapshot": {
+    "schema": "relay-public-snapshot/v1",
+    "captured_at": "2026-11-11T13:01:02.842838+00:00",
+    "scope": "Selected public listing facts collected 2026-11-10; frozen for reproducibility. Not current availability.",
+    "records": [
+      {
+        "id": "near:academic-research",
+        "market": "near",
+        "title": "Academic Research",
+        "capabilities": [
+          "research"
+        ],
+        "price": "1",
+        "currency": "USDC",
+        "price_basis": "per_call",
+        "source_url": "https://market.near.ai/a/academic-research",
+        "observed_at": "2026-11-10T16:14:36.210343+00:00",
+        "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+      },
+      {
+        "id": "near:azure-data-cleaner",
+        "market": "near",
+        "title": "Azure Data Cleaner",
+        "capabilities": [
+          "data_cleanup",
+          "research",
+          "verification"
+        ],
+        "price": "0.5000",
+        "currency": "USDC",
+        "price_basis": "per_call",
+        "source_url": "https://market.near.ai/a/azure-data-cleaner",
+        "observed_at": "2026-11-10T16:14:36.705626+00:00",
+        "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+      },
+      {
+        "id": "near:cited-research-desk",
+        "market": "near",
+        "title": "Cited Research Desk",
+        "capabilities": [
+          "research",
+          "verification"
+        ],
+        "price": "2",
+        "currency": null,
+        "price_basis": "per_call",
+        "source_url": "https://market.near.ai/a/cited-research-desk",
+        "observed_at": "2026-11-10T16:14:36.214400+00:00",
+        "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+      },
+      {
+        "id": "near:cited-web-research-brief",
+        "market": "near",
+        "title": "Cited Web Research Brief",
+        "capabilities": [
+          "coding",
+          "research",
+          "verification",
+          "web_search"
+        ],
+        "price": "0.1500",
+        "currency": "USDC",
+        "price_basis": "per_call",
+        "source_url": "https://market.near.ai/a/cited-web-research-brief",
+        "observed_at": "2026-11-10T16:14:36.211226+00:00",
+        "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+      },
+      {
+        "id": "tako:anybrowse",
+        "market": "tako",
+        "title": "anybrowse",
+        "capabilities": [
+          "data_cleanup",
+          "extraction",
+          "web_search"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://takoapi.com/agents/anybrowse",
+        "observed_at": "2026-11-10T15:58:45.801587+00:00",
+        "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+      },
+      {
+        "id": "tako:ganjamon-ai",
+        "market": "tako",
+        "title": "GanjaMon AI",
+        "capabilities": [
+          "onchain_research"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://takoapi.com/agents/ganjamon-ai",
+        "observed_at": "2026-11-10T15:58:45.799347+00:00",
+        "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+      },
+      {
+        "id": "tako:kevros-governance-api",
+        "market": "tako",
+        "title": "Kevros Governance API",
+        "capabilities": [
+          "onchain_research",
+          "verification"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://takoapi.com/agents/kevros-governance-api",
+        "observed_at": "2026-11-10T15:58:45.801150+00:00",
+        "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+      },
+      {
+        "id": "tako:lane",
+        "market": "tako",
+        "title": "Lane",
+        "capabilities": [
+          "extraction"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://takoapi.com/agents/lane",
+        "observed_at": "2026-11-10T15:58:45.799970+00:00",
+        "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+      },
+      {
+        "id": "agentmarket:eugene",
+        "market": "agentmarket",
+        "title": "Eugene",
+        "capabilities": [
+          "research"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://www.agentmarket.trade/products/eugene",
+        "observed_at": "2026-11-10T15:58:46.064348+00:00",
+        "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+      },
+      {
+        "id": "agentmarket:floqer",
+        "market": "agentmarket",
+        "title": "Floqer",
+        "capabilities": [
+          "research"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://www.agentmarket.trade/products/floqer",
+        "observed_at": "2026-11-10T15:58:46.064485+00:00",
+        "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+      },
+      {
+        "id": "agentmarket:jasper-ai",
+        "market": "agentmarket",
+        "title": "Jasper AI",
+        "capabilities": [
+          "media",
+          "research"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://www.agentmarket.trade/products/jasper-ai",
+        "observed_at": "2026-11-10T15:58:46.065983+00:00",
+        "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+      },
+      {
+        "id": "agentmarket:sellerclaw",
+        "market": "agentmarket",
+        "title": "SellerClaw",
+        "capabilities": [
+          "research"
+        ],
+        "price": null,
+        "currency": null,
+        "price_basis": "unknown",
+        "source_url": "https://www.agentmarket.trade/products/sellerclaw",
+        "observed_at": "2026-11-10T15:58:46.065427+00:00",
+        "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+      }
+    ]
+  },
+  "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+  "handoffs": [
+    {
+      "request": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "extractor",
+        "payload": {
+          "snapshot": {
+            "schema": "relay-public-snapshot/v1",
+            "captured_at": "2026-11-11T13:01:02.842838+00:00",
+            "scope": "Selected public listing facts collected 2026-11-10; frozen for reproducibility. Not current availability.",
+            "records": [
+              {
+                "id": "near:academic-research",
+                "market": "near",
+                "title": "Academic Research",
+                "capabilities": [
+                  "research"
+                ],
+                "price": "1",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "title": "Azure Data Cleaner",
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "price": "0.5000",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+              },
+              {
+                "id": "near:cited-research-desk",
+                "market": "near",
+                "title": "Cited Research Desk",
+                "capabilities": [
+                  "research",
+                  "verification"
+                ],
+                "price": "2",
+                "currency": null,
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-research-desk",
+                "observed_at": "2026-11-10T16:14:36.214400+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:cited-web-research-brief",
+                "market": "near",
+                "title": "Cited Web Research Brief",
+                "capabilities": [
+                  "coding",
+                  "research",
+                  "verification",
+                  "web_search"
+                ],
+                "price": "0.1500",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-web-research-brief",
+                "observed_at": "2026-11-10T16:14:36.211226+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "title": "anybrowse",
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:ganjamon-ai",
+                "market": "tako",
+                "title": "GanjaMon AI",
+                "capabilities": [
+                  "onchain_research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/ganjamon-ai",
+                "observed_at": "2026-11-10T15:58:45.799347+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:kevros-governance-api",
+                "market": "tako",
+                "title": "Kevros Governance API",
+                "capabilities": [
+                  "onchain_research",
+                  "verification"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/kevros-governance-api",
+                "observed_at": "2026-11-10T15:58:45.801150+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:lane",
+                "market": "tako",
+                "title": "Lane",
+                "capabilities": [
+                  "extraction"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/lane",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "title": "Eugene",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "title": "Floqer",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:jasper-ai",
+                "market": "agentmarket",
+                "title": "Jasper AI",
+                "capabilities": [
+                  "media",
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/jasper-ai",
+                "observed_at": "2026-11-10T15:58:46.065983+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:sellerclaw",
+                "market": "agentmarket",
+                "title": "SellerClaw",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/sellerclaw",
+                "observed_at": "2026-11-10T15:58:46.065427+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              }
+            ]
+          },
+          "task": {
+            "title": "Compare research and extraction providers across marketplaces using cited listing evidence.",
+            "capabilities": [
+              "research",
+              "extraction"
+            ],
+            "min_rows": 4,
+            "max_rows": 6,
+            "min_markets": 2,
+            "acceptance": [
+              "4\u20136 distinct provider rows",
+              "At least two marketplaces",
+              "Every value agrees with frozen evidence",
+              "Each row cites its public listing and observation timestamp",
+              "Price units and uncertainty preserved"
+            ],
+            "budget": "0",
+            "mode": "LOCAL_WORKERS_ONLY"
+          }
+        }
+      },
+      "response": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "extractor",
+        "request_sha256": "7bb1a758c8aa92ee237a07bc135d1c43fbf02f0bda507b6d50aab9e8b758d129",
+        "output": {
+          "schema": "relay-extraction/v1",
+          "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+          "rows": [
+            {
+              "id": "agentmarket:eugene",
+              "market": "agentmarket",
+              "title": "Eugene",
+              "capabilities": [
+                "research"
+              ],
+              "price": null,
+              "currency": null,
+              "price_basis": "unknown",
+              "source_url": "https://www.agentmarket.trade/products/eugene",
+              "observed_at": "2026-11-10T15:58:46.064348+00:00",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+            },
+            {
+              "id": "near:academic-research",
+              "market": "near",
+              "title": "Academic Research",
+              "capabilities": [
+                "research"
+              ],
+              "price": "1",
+              "currency": "USDC",
+              "price_basis": "per_call",
+              "source_url": "https://market.near.ai/a/academic-research",
+              "observed_at": "2026-11-10T16:14:36.210343+00:00",
+              "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+            },
+            {
+              "id": "tako:anybrowse",
+              "market": "tako",
+              "title": "anybrowse",
+              "capabilities": [
+                "data_cleanup",
+                "extraction",
+                "web_search"
+              ],
+              "price": null,
+              "currency": null,
+              "price_basis": "unknown",
+              "source_url": "https://takoapi.com/agents/anybrowse",
+              "observed_at": "2026-11-10T15:58:45.801587+00:00",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+            },
+            {
+              "id": "agentmarket:floqer",
+              "market": "agentmarket",
+              "title": "Floqer",
+              "capabilities": [
+                "research"
+              ],
+              "price": null,
+              "currency": null,
+              "price_basis": "unknown",
+              "source_url": "https://www.agentmarket.trade/products/floqer",
+              "observed_at": "2026-11-10T15:58:46.064485+00:00",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+            },
+            {
+              "id": "near:azure-data-cleaner",
+              "market": "near",
+              "title": "Azure Data Cleaner",
+              "capabilities": [
+                "data_cleanup",
+                "research",
+                "verification"
+              ],
+              "price": "0.5000",
+              "currency": "USDC",
+              "price_basis": "per_call",
+              "source_url": "https://market.near.ai/a/azure-data-cleaner",
+              "observed_at": "2026-11-10T16:14:36.705626+00:00",
+              "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+            },
+            {
+              "id": "tako:lane",
+              "market": "tako",
+              "title": "Lane",
+              "capabilities": [
+                "extraction"
+              ],
+              "price": null,
+              "currency": null,
+              "price_basis": "unknown",
+              "source_url": "https://takoapi.com/agents/lane",
+              "observed_at": "2026-11-10T15:58:45.799970+00:00",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+            }
+          ]
+        },
+        "output_sha256": "bdba7019030d49fb3ac7822c476a8610dc602410acb833716ff8d9d63f0c8d0f"
+      }
+    },
+    {
+      "request": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "writer",
+        "payload": {
+          "extraction": {
+            "schema": "relay-extraction/v1",
+            "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+            "rows": [
+              {
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "title": "Eugene",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "near:academic-research",
+                "market": "near",
+                "title": "Academic Research",
+                "capabilities": [
+                  "research"
+                ],
+                "price": "1",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "title": "anybrowse",
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "title": "Floqer",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "title": "Azure Data Cleaner",
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "price": "0.5000",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+              },
+              {
+                "id": "tako:lane",
+                "market": "tako",
+                "title": "Lane",
+                "capabilities": [
+                  "extraction"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/lane",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              }
+            ]
+          },
+          "revision": "r1"
+        }
+      },
+      "response": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "writer",
+        "request_sha256": "eca05b3685ebe034fcaa182a7993d9d6b0230696f039b9332e87d8826889c2c9",
+        "output": {
+          "schema": "relay-comparison/v1",
+          "revision": "r1",
+          "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+          "rows": [
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": null,
+              "id": "agentmarket:eugene",
+              "market": "agentmarket",
+              "observed_at": "2026-11-10T15:58:46.064348+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+              "source_url": "https://www.agentmarket.trade/products/eugene",
+              "title": "Eugene"
+            },
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": "USDC",
+              "id": "near:academic-research",
+              "market": "near",
+              "observed_at": "2026-11-10T16:14:36.210343+00:00",
+              "price": "1",
+              "price_basis": "per_call",
+              "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+              "source_url": "https://market.near.ai/a/academic-research",
+              "title": "Academic Research"
+            },
+            {
+              "capabilities": [
+                "data_cleanup",
+                "extraction",
+                "web_search"
+              ],
+              "currency": null,
+              "id": "tako:anybrowse",
+              "market": "tako",
+              "observed_at": "2026-11-10T15:58:45.801587+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+              "source_url": "https://takoapi.com/agents/anybrowse",
+              "title": "anybrowse"
+            },
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": null,
+              "id": "agentmarket:floqer",
+              "market": "agentmarket",
+              "observed_at": "2026-11-10T15:58:46.064485+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+              "source_url": "https://www.agentmarket.trade/products/floqer",
+              "title": "Floqer"
+            },
+            {
+              "capabilities": [
+                "data_cleanup",
+                "research",
+                "verification"
+              ],
+              "currency": "USDC",
+              "id": "near:azure-data-cleaner",
+              "market": "near",
+              "observed_at": "2026-11-10T16:14:36.705626+00:00",
+              "price": "0.5000",
+              "price_basis": "per_call",
+              "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+              "source_url": "https://market.near.ai/a/azure-data-cleaner",
+              "title": "Azure Data Cleaner"
+            },
+            {
+              "capabilities": [
+                "extraction"
+              ],
+              "currency": null,
+              "id": "tako:lane",
+              "market": "tako",
+              "observed_at": "2026-11-10T15:58:45.799970+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+              "source_url": "https://takoapi.com/agents/lane",
+              "title": "Lane"
+            }
+          ],
+          "limitations": [
+            "Frozen listing evidence; current availability not checked.",
+            "Capabilities are listing-derived labels, not verified provider performance.",
+            "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+            "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+          ],
+          "payment_executed": false,
+          "provider_contacted": false
+        },
+        "output_sha256": "ebd84ebd49dca2031890df0f01262a8b4c83785e95e2913c9a71c4d82c1b3a58"
+      }
+    },
+    {
+      "request": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "verifier",
+        "payload": {
+          "artifact": {
+            "limitations": [
+              "Frozen listing evidence; current availability not checked.",
+              "Capabilities are listing-derived labels, not verified provider performance.",
+              "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+              "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+            ],
+            "payment_executed": false,
+            "provider_contacted": false,
+            "revision": "r1",
+            "rows": [
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": null,
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+                "source_url": "",
+                "title": "Eugene"
+              },
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": "USDC",
+                "id": "near:academic-research",
+                "market": "near",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "price": "1",
+                "price_basis": "per_call",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "title": "Academic Research"
+              },
+              {
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "currency": null,
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "title": "anybrowse"
+              },
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": null,
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "title": "Floqer"
+              },
+              {
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "currency": "USDC",
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "price": "0.5000",
+                "price_basis": "per_call",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "title": "Azure Data Cleaner"
+              },
+              {
+                "capabilities": [
+                  "extraction"
+                ],
+                "currency": null,
+                "id": "tako:lane",
+                "market": "tako",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+                "source_url": "https://takoapi.com/agents/lane",
+                "title": "Lane"
+              }
+            ],
+            "schema": "relay-comparison/v1",
+            "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be"
+          },
+          "snapshot": {
+            "schema": "relay-public-snapshot/v1",
+            "captured_at": "2026-11-11T13:01:02.842838+00:00",
+            "scope": "Selected public listing facts collected 2026-11-10; frozen for reproducibility. Not current availability.",
+            "records": [
+              {
+                "id": "near:academic-research",
+                "market": "near",
+                "title": "Academic Research",
+                "capabilities": [
+                  "research"
+                ],
+                "price": "1",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "title": "Azure Data Cleaner",
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "price": "0.5000",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+              },
+              {
+                "id": "near:cited-research-desk",
+                "market": "near",
+                "title": "Cited Research Desk",
+                "capabilities": [
+                  "research",
+                  "verification"
+                ],
+                "price": "2",
+                "currency": null,
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-research-desk",
+                "observed_at": "2026-11-10T16:14:36.214400+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:cited-web-research-brief",
+                "market": "near",
+                "title": "Cited Web Research Brief",
+                "capabilities": [
+                  "coding",
+                  "research",
+                  "verification",
+                  "web_search"
+                ],
+                "price": "0.1500",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-web-research-brief",
+                "observed_at": "2026-11-10T16:14:36.211226+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "title": "anybrowse",
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:ganjamon-ai",
+                "market": "tako",
+                "title": "GanjaMon AI",
+                "capabilities": [
+                  "onchain_research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/ganjamon-ai",
+                "observed_at": "2026-11-10T15:58:45.799347+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:kevros-governance-api",
+                "market": "tako",
+                "title": "Kevros Governance API",
+                "capabilities": [
+                  "onchain_research",
+                  "verification"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/kevros-governance-api",
+                "observed_at": "2026-11-10T15:58:45.801150+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:lane",
+                "market": "tako",
+                "title": "Lane",
+                "capabilities": [
+                  "extraction"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/lane",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "title": "Eugene",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "title": "Floqer",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:jasper-ai",
+                "market": "agentmarket",
+                "title": "Jasper AI",
+                "capabilities": [
+                  "media",
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/jasper-ai",
+                "observed_at": "2026-11-10T15:58:46.065983+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:sellerclaw",
+                "market": "agentmarket",
+                "title": "SellerClaw",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/sellerclaw",
+                "observed_at": "2026-11-10T15:58:46.065427+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              }
+            ]
+          },
+          "task": {
+            "title": "Compare research and extraction providers across marketplaces using cited listing evidence.",
+            "capabilities": [
+              "research",
+              "extraction"
+            ],
+            "min_rows": 4,
+            "max_rows": 6,
+            "min_markets": 2,
+            "acceptance": [
+              "4\u20136 distinct provider rows",
+              "At least two marketplaces",
+              "Every value agrees with frozen evidence",
+              "Each row cites its public listing and observation timestamp",
+              "Price units and uncertainty preserved"
+            ],
+            "budget": "0",
+            "mode": "LOCAL_WORKERS_ONLY"
+          }
+        }
+      },
+      "response": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "verifier",
+        "request_sha256": "b5ad4acc59cb0ec0de2fb020aee19822b4b3a51eb3bd3e93acdc3cbb25e1aac9",
+        "output": {
+          "schema": "relay-verification/v1",
+          "result": "FAIL",
+          "artifact_sha256": "764db6b57c8aef3078cc95253eb4d4cce4a3e90ad24127a08bba592766dd7270",
+          "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+          "checks": [
+            {
+              "name": "Artifact schema",
+              "pass": true
+            },
+            {
+              "name": "Revision identified",
+              "pass": true
+            },
+            {
+              "name": "Snapshot hash matches frozen input",
+              "pass": true
+            },
+            {
+              "name": "Requested row count",
+              "pass": true
+            },
+            {
+              "name": "No duplicate provider identities",
+              "pass": true
+            },
+            {
+              "name": "At least two marketplaces",
+              "pass": true
+            },
+            {
+              "name": "Row 1 is grounded in the snapshot",
+              "pass": false
+            },
+            {
+              "name": "Row 1 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 1 has public citation and timestamp",
+              "pass": false
+            },
+            {
+              "name": "Row 2 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 2 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 2 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 3 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 3 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 3 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 4 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 4 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 4 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 5 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 5 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 5 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 6 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 6 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 6 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Limitations explicitly disclosed",
+              "pass": true
+            },
+            {
+              "name": "No false execution or payment claim",
+              "pass": true
+            }
+          ],
+          "scope": "Snapshot consistency and task acceptance criteria; not independent factual truth or service quality."
+        },
+        "output_sha256": "3799d575e2c13b6b61eba6b6438a6763636f6940355d0ea50c372d3c122e1021"
+      }
+    },
+    {
+      "request": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "writer",
+        "payload": {
+          "extraction": {
+            "schema": "relay-extraction/v1",
+            "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+            "rows": [
+              {
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "title": "Eugene",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "near:academic-research",
+                "market": "near",
+                "title": "Academic Research",
+                "capabilities": [
+                  "research"
+                ],
+                "price": "1",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "title": "anybrowse",
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "title": "Floqer",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "title": "Azure Data Cleaner",
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "price": "0.5000",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+              },
+              {
+                "id": "tako:lane",
+                "market": "tako",
+                "title": "Lane",
+                "capabilities": [
+                  "extraction"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/lane",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              }
+            ]
+          },
+          "revision": "r2"
+        }
+      },
+      "response": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "writer",
+        "request_sha256": "1428369c7aab7b5ed83eb368c2ff52965776856fb7f6037e0ae30a57b54dfb05",
+        "output": {
+          "schema": "relay-comparison/v1",
+          "revision": "r2",
+          "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+          "rows": [
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": null,
+              "id": "agentmarket:eugene",
+              "market": "agentmarket",
+              "observed_at": "2026-11-10T15:58:46.064348+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+              "source_url": "https://www.agentmarket.trade/products/eugene",
+              "title": "Eugene"
+            },
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": "USDC",
+              "id": "near:academic-research",
+              "market": "near",
+              "observed_at": "2026-11-10T16:14:36.210343+00:00",
+              "price": "1",
+              "price_basis": "per_call",
+              "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+              "source_url": "https://market.near.ai/a/academic-research",
+              "title": "Academic Research"
+            },
+            {
+              "capabilities": [
+                "data_cleanup",
+                "extraction",
+                "web_search"
+              ],
+              "currency": null,
+              "id": "tako:anybrowse",
+              "market": "tako",
+              "observed_at": "2026-11-10T15:58:45.801587+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+              "source_url": "https://takoapi.com/agents/anybrowse",
+              "title": "anybrowse"
+            },
+            {
+              "capabilities": [
+                "research"
+              ],
+              "currency": null,
+              "id": "agentmarket:floqer",
+              "market": "agentmarket",
+              "observed_at": "2026-11-10T15:58:46.064485+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+              "source_url": "https://www.agentmarket.trade/products/floqer",
+              "title": "Floqer"
+            },
+            {
+              "capabilities": [
+                "data_cleanup",
+                "research",
+                "verification"
+              ],
+              "currency": "USDC",
+              "id": "near:azure-data-cleaner",
+              "market": "near",
+              "observed_at": "2026-11-10T16:14:36.705626+00:00",
+              "price": "0.5000",
+              "price_basis": "per_call",
+              "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+              "source_url": "https://market.near.ai/a/azure-data-cleaner",
+              "title": "Azure Data Cleaner"
+            },
+            {
+              "capabilities": [
+                "extraction"
+              ],
+              "currency": null,
+              "id": "tako:lane",
+              "market": "tako",
+              "observed_at": "2026-11-10T15:58:45.799970+00:00",
+              "price": null,
+              "price_basis": "unknown",
+              "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+              "source_url": "https://takoapi.com/agents/lane",
+              "title": "Lane"
+            }
+          ],
+          "limitations": [
+            "Frozen listing evidence; current availability not checked.",
+            "Capabilities are listing-derived labels, not verified provider performance.",
+            "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+            "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+          ],
+          "payment_executed": false,
+          "provider_contacted": false
+        },
+        "output_sha256": "6c651ac26fa328961e9c4f58534f207d46d719dccdad55ea1ec95f36d3c9753c"
+      }
+    },
+    {
+      "request": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "verifier",
+        "payload": {
+          "artifact": {
+            "schema": "relay-comparison/v1",
+            "revision": "r2",
+            "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+            "rows": [
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": null,
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "title": "Eugene"
+              },
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": "USDC",
+                "id": "near:academic-research",
+                "market": "near",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "price": "1",
+                "price_basis": "per_call",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "title": "Academic Research"
+              },
+              {
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "currency": null,
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "title": "anybrowse"
+              },
+              {
+                "capabilities": [
+                  "research"
+                ],
+                "currency": null,
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "title": "Floqer"
+              },
+              {
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "currency": "USDC",
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "price": "0.5000",
+                "price_basis": "per_call",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "title": "Azure Data Cleaner"
+              },
+              {
+                "capabilities": [
+                  "extraction"
+                ],
+                "currency": null,
+                "id": "tako:lane",
+                "market": "tako",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "price": null,
+                "price_basis": "unknown",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+                "source_url": "https://takoapi.com/agents/lane",
+                "title": "Lane"
+              }
+            ],
+            "limitations": [
+              "Frozen listing evidence; current availability not checked.",
+              "Capabilities are listing-derived labels, not verified provider performance.",
+              "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+              "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+            ],
+            "payment_executed": false,
+            "provider_contacted": false
+          },
+          "snapshot": {
+            "schema": "relay-public-snapshot/v1",
+            "captured_at": "2026-11-11T13:01:02.842838+00:00",
+            "scope": "Selected public listing facts collected 2026-11-10; frozen for reproducibility. Not current availability.",
+            "records": [
+              {
+                "id": "near:academic-research",
+                "market": "near",
+                "title": "Academic Research",
+                "capabilities": [
+                  "research"
+                ],
+                "price": "1",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/academic-research",
+                "observed_at": "2026-11-10T16:14:36.210343+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:azure-data-cleaner",
+                "market": "near",
+                "title": "Azure Data Cleaner",
+                "capabilities": [
+                  "data_cleanup",
+                  "research",
+                  "verification"
+                ],
+                "price": "0.5000",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/azure-data-cleaner",
+                "observed_at": "2026-11-10T16:14:36.705626+00:00",
+                "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+              },
+              {
+                "id": "near:cited-research-desk",
+                "market": "near",
+                "title": "Cited Research Desk",
+                "capabilities": [
+                  "research",
+                  "verification"
+                ],
+                "price": "2",
+                "currency": null,
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-research-desk",
+                "observed_at": "2026-11-10T16:14:36.214400+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "near:cited-web-research-brief",
+                "market": "near",
+                "title": "Cited Web Research Brief",
+                "capabilities": [
+                  "coding",
+                  "research",
+                  "verification",
+                  "web_search"
+                ],
+                "price": "0.1500",
+                "currency": "USDC",
+                "price_basis": "per_call",
+                "source_url": "https://market.near.ai/a/cited-web-research-brief",
+                "observed_at": "2026-11-10T16:14:36.211226+00:00",
+                "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+              },
+              {
+                "id": "tako:anybrowse",
+                "market": "tako",
+                "title": "anybrowse",
+                "capabilities": [
+                  "data_cleanup",
+                  "extraction",
+                  "web_search"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/anybrowse",
+                "observed_at": "2026-11-10T15:58:45.801587+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:ganjamon-ai",
+                "market": "tako",
+                "title": "GanjaMon AI",
+                "capabilities": [
+                  "onchain_research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/ganjamon-ai",
+                "observed_at": "2026-11-10T15:58:45.799347+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:kevros-governance-api",
+                "market": "tako",
+                "title": "Kevros Governance API",
+                "capabilities": [
+                  "onchain_research",
+                  "verification"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/kevros-governance-api",
+                "observed_at": "2026-11-10T15:58:45.801150+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "tako:lane",
+                "market": "tako",
+                "title": "Lane",
+                "capabilities": [
+                  "extraction"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://takoapi.com/agents/lane",
+                "observed_at": "2026-11-10T15:58:45.799970+00:00",
+                "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+              },
+              {
+                "id": "agentmarket:eugene",
+                "market": "agentmarket",
+                "title": "Eugene",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/eugene",
+                "observed_at": "2026-11-10T15:58:46.064348+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:floqer",
+                "market": "agentmarket",
+                "title": "Floqer",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/floqer",
+                "observed_at": "2026-11-10T15:58:46.064485+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:jasper-ai",
+                "market": "agentmarket",
+                "title": "Jasper AI",
+                "capabilities": [
+                  "media",
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/jasper-ai",
+                "observed_at": "2026-11-10T15:58:46.065983+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              },
+              {
+                "id": "agentmarket:sellerclaw",
+                "market": "agentmarket",
+                "title": "SellerClaw",
+                "capabilities": [
+                  "research"
+                ],
+                "price": null,
+                "currency": null,
+                "price_basis": "unknown",
+                "source_url": "https://www.agentmarket.trade/products/sellerclaw",
+                "observed_at": "2026-11-10T15:58:46.065427+00:00",
+                "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+              }
+            ]
+          },
+          "task": {
+            "title": "Compare research and extraction providers across marketplaces using cited listing evidence.",
+            "capabilities": [
+              "research",
+              "extraction"
+            ],
+            "min_rows": 4,
+            "max_rows": 6,
+            "min_markets": 2,
+            "acceptance": [
+              "4\u20136 distinct provider rows",
+              "At least two marketplaces",
+              "Every value agrees with frozen evidence",
+              "Each row cites its public listing and observation timestamp",
+              "Price units and uncertainty preserved"
+            ],
+            "budget": "0",
+            "mode": "LOCAL_WORKERS_ONLY"
+          }
+        }
+      },
+      "response": {
+        "protocol": "relay-handoff/v1",
+        "run_id": "demo-fd3ed7de02c54eafaed75135553279ee",
+        "worker": "verifier",
+        "request_sha256": "6ac62fcbfc40dd3ec2c5033dd2270d13ee0437076730ec449cd42bb605b9ee25",
+        "output": {
+          "schema": "relay-verification/v1",
+          "result": "PASS",
+          "artifact_sha256": "6c651ac26fa328961e9c4f58534f207d46d719dccdad55ea1ec95f36d3c9753c",
+          "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+          "checks": [
+            {
+              "name": "Artifact schema",
+              "pass": true
+            },
+            {
+              "name": "Revision identified",
+              "pass": true
+            },
+            {
+              "name": "Snapshot hash matches frozen input",
+              "pass": true
+            },
+            {
+              "name": "Requested row count",
+              "pass": true
+            },
+            {
+              "name": "No duplicate provider identities",
+              "pass": true
+            },
+            {
+              "name": "At least two marketplaces",
+              "pass": true
+            },
+            {
+              "name": "Row 1 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 1 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 1 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 2 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 2 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 2 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 3 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 3 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 3 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 4 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 4 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 4 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 5 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 5 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 5 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Row 6 is grounded in the snapshot",
+              "pass": true
+            },
+            {
+              "name": "Row 6 meets a requested capability",
+              "pass": true
+            },
+            {
+              "name": "Row 6 has public citation and timestamp",
+              "pass": true
+            },
+            {
+              "name": "Limitations explicitly disclosed",
+              "pass": true
+            },
+            {
+              "name": "No false execution or payment claim",
+              "pass": true
+            }
+          ],
+          "scope": "Snapshot consistency and task acceptance criteria; not independent factual truth or service quality."
+        },
+        "output_sha256": "cb21f471acd8e6a549d1010a7b3d35ed6db55244e0a88847e14715a8652c760e"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "limitations": [
+        "Frozen listing evidence; current availability not checked.",
+        "Capabilities are listing-derived labels, not verified provider performance.",
+        "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+        "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+      ],
+      "payment_executed": false,
+      "provider_contacted": false,
+      "revision": "r1",
+      "rows": [
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": null,
+          "id": "agentmarket:eugene",
+          "market": "agentmarket",
+          "observed_at": "2026-11-10T15:58:46.064348+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+          "source_url": "",
+          "title": "Eugene"
+        },
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": "USDC",
+          "id": "near:academic-research",
+          "market": "near",
+          "observed_at": "2026-11-10T16:14:36.210343+00:00",
+          "price": "1",
+          "price_basis": "per_call",
+          "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+          "source_url": "https://market.near.ai/a/academic-research",
+          "title": "Academic Research"
+        },
+        {
+          "capabilities": [
+            "data_cleanup",
+            "extraction",
+            "web_search"
+          ],
+          "currency": null,
+          "id": "tako:anybrowse",
+          "market": "tako",
+          "observed_at": "2026-11-10T15:58:45.801587+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+          "source_url": "https://takoapi.com/agents/anybrowse",
+          "title": "anybrowse"
+        },
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": null,
+          "id": "agentmarket:floqer",
+          "market": "agentmarket",
+          "observed_at": "2026-11-10T15:58:46.064485+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+          "source_url": "https://www.agentmarket.trade/products/floqer",
+          "title": "Floqer"
+        },
+        {
+          "capabilities": [
+            "data_cleanup",
+            "research",
+            "verification"
+          ],
+          "currency": "USDC",
+          "id": "near:azure-data-cleaner",
+          "market": "near",
+          "observed_at": "2026-11-10T16:14:36.705626+00:00",
+          "price": "0.5000",
+          "price_basis": "per_call",
+          "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+          "source_url": "https://market.near.ai/a/azure-data-cleaner",
+          "title": "Azure Data Cleaner"
+        },
+        {
+          "capabilities": [
+            "extraction"
+          ],
+          "currency": null,
+          "id": "tako:lane",
+          "market": "tako",
+          "observed_at": "2026-11-10T15:58:45.799970+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+          "source_url": "https://takoapi.com/agents/lane",
+          "title": "Lane"
+        }
+      ],
+      "schema": "relay-comparison/v1",
+      "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be"
+    },
+    {
+      "schema": "relay-comparison/v1",
+      "revision": "r2",
+      "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+      "rows": [
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": null,
+          "id": "agentmarket:eugene",
+          "market": "agentmarket",
+          "observed_at": "2026-11-10T15:58:46.064348+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+          "source_url": "https://www.agentmarket.trade/products/eugene",
+          "title": "Eugene"
+        },
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": "USDC",
+          "id": "near:academic-research",
+          "market": "near",
+          "observed_at": "2026-11-10T16:14:36.210343+00:00",
+          "price": "1",
+          "price_basis": "per_call",
+          "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f",
+          "source_url": "https://market.near.ai/a/academic-research",
+          "title": "Academic Research"
+        },
+        {
+          "capabilities": [
+            "data_cleanup",
+            "extraction",
+            "web_search"
+          ],
+          "currency": null,
+          "id": "tako:anybrowse",
+          "market": "tako",
+          "observed_at": "2026-11-10T15:58:45.801587+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+          "source_url": "https://takoapi.com/agents/anybrowse",
+          "title": "anybrowse"
+        },
+        {
+          "capabilities": [
+            "research"
+          ],
+          "currency": null,
+          "id": "agentmarket:floqer",
+          "market": "agentmarket",
+          "observed_at": "2026-11-10T15:58:46.064485+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074",
+          "source_url": "https://www.agentmarket.trade/products/floqer",
+          "title": "Floqer"
+        },
+        {
+          "capabilities": [
+            "data_cleanup",
+            "research",
+            "verification"
+          ],
+          "currency": "USDC",
+          "id": "near:azure-data-cleaner",
+          "market": "near",
+          "observed_at": "2026-11-10T16:14:36.705626+00:00",
+          "price": "0.5000",
+          "price_basis": "per_call",
+          "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9",
+          "source_url": "https://market.near.ai/a/azure-data-cleaner",
+          "title": "Azure Data Cleaner"
+        },
+        {
+          "capabilities": [
+            "extraction"
+          ],
+          "currency": null,
+          "id": "tako:lane",
+          "market": "tako",
+          "observed_at": "2026-11-10T15:58:45.799970+00:00",
+          "price": null,
+          "price_basis": "unknown",
+          "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09",
+          "source_url": "https://takoapi.com/agents/lane",
+          "title": "Lane"
+        }
+      ],
+      "limitations": [
+        "Frozen listing evidence; current availability not checked.",
+        "Capabilities are listing-derived labels, not verified provider performance.",
+        "Per-call prices are not full-job quotes; no currency conversion is assumed.",
+        "No marketplace provider was contacted; no payment or buyer acceptance occurred."
+      ],
+      "payment_executed": false,
+      "provider_contacted": false
+    }
+  ],
+  "verifications": [
+    {
+      "schema": "relay-verification/v1",
+      "result": "FAIL",
+      "artifact_sha256": "764db6b57c8aef3078cc95253eb4d4cce4a3e90ad24127a08bba592766dd7270",
+      "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+      "checks": [
+        {
+          "name": "Artifact schema",
+          "pass": true
+        },
+        {
+          "name": "Revision identified",
+          "pass": true
+        },
+        {
+          "name": "Snapshot hash matches frozen input",
+          "pass": true
+        },
+        {
+          "name": "Requested row count",
+          "pass": true
+        },
+        {
+          "name": "No duplicate provider identities",
+          "pass": true
+        },
+        {
+          "name": "At least two marketplaces",
+          "pass": true
+        },
+        {
+          "name": "Row 1 is grounded in the snapshot",
+          "pass": false
+        },
+        {
+          "name": "Row 1 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 1 has public citation and timestamp",
+          "pass": false
+        },
+        {
+          "name": "Row 2 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 2 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 2 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 3 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 3 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 3 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 4 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 4 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 4 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 5 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 5 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 5 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 6 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 6 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 6 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Limitations explicitly disclosed",
+          "pass": true
+        },
+        {
+          "name": "No false execution or payment claim",
+          "pass": true
+        }
+      ],
+      "scope": "Snapshot consistency and task acceptance criteria; not independent factual truth or service quality."
+    },
+    {
+      "schema": "relay-verification/v1",
+      "result": "PASS",
+      "artifact_sha256": "6c651ac26fa328961e9c4f58534f207d46d719dccdad55ea1ec95f36d3c9753c",
+      "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be",
+      "checks": [
+        {
+          "name": "Artifact schema",
+          "pass": true
+        },
+        {
+          "name": "Revision identified",
+          "pass": true
+        },
+        {
+          "name": "Snapshot hash matches frozen input",
+          "pass": true
+        },
+        {
+          "name": "Requested row count",
+          "pass": true
+        },
+        {
+          "name": "No duplicate provider identities",
+          "pass": true
+        },
+        {
+          "name": "At least two marketplaces",
+          "pass": true
+        },
+        {
+          "name": "Row 1 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 1 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 1 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 2 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 2 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 2 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 3 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 3 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 3 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 4 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 4 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 4 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 5 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 5 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 5 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Row 6 is grounded in the snapshot",
+          "pass": true
+        },
+        {
+          "name": "Row 6 meets a requested capability",
+          "pass": true
+        },
+        {
+          "name": "Row 6 has public citation and timestamp",
+          "pass": true
+        },
+        {
+          "name": "Limitations explicitly disclosed",
+          "pass": true
+        },
+        {
+          "name": "No false execution or payment claim",
+          "pass": true
+        }
+      ],
+      "scope": "Snapshot consistency and task acceptance criteria; not independent factual truth or service quality."
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "at": "2026-11-11T13:07:25.338568+00:00",
+      "kind": "TASK_CREATED",
+      "details": {
+        "task_sha256": "d0e2d12f30ed640f5a6e80725392919399dd4ed17bdc7be221a06fbfc6eb18e3",
+        "snapshot_sha256": "29830e7a12abb5e4f6fd545bb2e469b2879a38cc3c0116518be1a333d473b6be"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_hash": "ac7ae79aa6ba2b0dc20c012352684df7ea91af120fb6b5679971081242a3ecf5"
+    },
+    {
+      "sequence": 2,
+      "at": "2026-11-11T13:07:25.412303+00:00",
+      "kind": "WORKER_RETURNED",
+      "details": {
+        "worker": "extractor",
+        "handoff_sha256": "740f881026c43e1e2c223a751902150ea5535c222aaa49ae7259ca26c97afeee"
+      },
+      "previous_hash": "ac7ae79aa6ba2b0dc20c012352684df7ea91af120fb6b5679971081242a3ecf5",
+      "event_hash": "02de97b72433850dc6643f6103761ad19ed5728ee64ed826f51a3d4fa59b9755"
+    },
+    {
+      "sequence": 3,
+      "at": "2026-11-11T13:07:25.476905+00:00",
+      "kind": "WORKER_RETURNED",
+      "details": {
+        "worker": "writer",
+        "handoff_sha256": "a54943434c07cdab97b5213dc8d2f2a1bd57174f44a1e95bb6b67a91273a93b0"
+      },
+      "previous_hash": "02de97b72433850dc6643f6103761ad19ed5728ee64ed826f51a3d4fa59b9755",
+      "event_hash": "16f03504809f57f0132c8a69b4d270267b2bde366c8c3268477576ca775238e1"
+    },
+    {
+      "sequence": 4,
+      "at": "2026-11-11T13:07:25.476967+00:00",
+      "kind": "TEST_FAULT_INJECTED",
+      "details": {
+        "kind": "missing citation",
+        "artifact_sha256": "764db6b57c8aef3078cc95253eb4d4cce4a3e90ad24127a08bba592766dd7270"
+      },
+      "previous_hash": "16f03504809f57f0132c8a69b4d270267b2bde366c8c3268477576ca775238e1",
+      "event_hash": "b2cf5697261ca4a52877eee4e2646de372c15180e243207c81615944192587f4"
+    },
+    {
+      "sequence": 5,
+      "at": "2026-11-11T13:07:25.476987+00:00",
+      "kind": "ARTIFACT_RETURNED",
+      "details": {
+        "revision": "r1",
+        "artifact_sha256": "764db6b57c8aef3078cc95253eb4d4cce4a3e90ad24127a08bba592766dd7270"
+      },
+      "previous_hash": "b2cf5697261ca4a52877eee4e2646de372c15180e243207c81615944192587f4",
+      "event_hash": "ec2d57354625cd7d0dd3f2081b32d694b22539c03e91b118a5540318b9c69345"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-11-11T13:07:25.542755+00:00",
+      "kind": "WORKER_RETURNED",
+      "details": {
+        "worker": "verifier",
+        "handoff_sha256": "ae88d9508ffef486eb006b1901f1ac6709ecf6a085a789b15264a5a258d393cb"
+      },
+      "previous_hash": "ec2d57354625cd7d0dd3f2081b32d694b22539c03e91b118a5540318b9c69345",
+      "event_hash": "104e52fd78d6682643632fe675a617cc55bbc8ce6f4e50ae9fed560b8c6a50e5"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-11-11T13:07:25.542789+00:00",
+      "kind": "VERIFICATION_FAIL",
+      "details": {
+        "verification_sha256": "3799d575e2c13b6b61eba6b6438a6763636f6940355d0ea50c372d3c122e1021"
+      },
+      "previous_hash": "104e52fd78d6682643632fe675a617cc55bbc8ce6f4e50ae9fed560b8c6a50e5",
+      "event_hash": "5691d51e4657246a25e5ab7d3f739f69f06a791d775649c2ece9654a8ddbfb1b"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-11-11T13:07:25.542796+00:00",
+      "kind": "REVISION_REQUESTED",
+      "details": {
+        "failed_checks": [
+          "Row 1 is grounded in the snapshot",
+          "Row 1 has public citation and timestamp"
+        ]
+      },
+      "previous_hash": "5691d51e4657246a25e5ab7d3f739f69f06a791d775649c2ece9654a8ddbfb1b",
+      "event_hash": "03bc1aa534c48eb5de3c55baf4f7e23b46d9ecdddb664153e184d33476aec736"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-11-11T13:07:25.608465+00:00",
+      "kind": "WORKER_RETURNED",
+      "details": {
+        "worker": "writer",
+        "handoff_sha256": "597bdea39c0c1f9caea510a5a9c2e96c540e588d7d0285a06f84fd8a2c02c140"
+      },
+      "previous_hash": "03bc1aa534c48eb5de3c55baf4f7e23b46d9ecdddb664153e184d33476aec736",
+      "event_hash": "eba64d23a87e1889b5853de3c9f16d1e7e92282c3d46e62dce098a077632efa8"
+    },
+    {
+      "sequence": 10,
+      "at": "2026-11-11T13:07:25.608505+00:00",
+      "kind": "ARTIFACT_RETURNED",
+      "details": {
+        "revision": "r2",
+        "artifact_sha256": "6c651ac26fa328961e9c4f58534f207d46d719dccdad55ea1ec95f36d3c9753c"
+      },
+      "previous_hash": "eba64d23a87e1889b5853de3c9f16d1e7e92282c3d46e62dce098a077632efa8",
+      "event_hash": "2a5165f0e4f23cbd53cefd5eeac64dd6f59c3aa3d2c00c5f7eb2dfaefbccd946"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-11-11T13:07:25.672949+00:00",
+      "kind": "WORKER_RETURNED",
+      "details": {
+        "worker": "verifier",
+        "handoff_sha256": "ccbc1ad277a6f8a7b3a79ef1c4143b5763cb9c54d7168b32c9f3a30f1c3d8639"
+      },
+      "previous_hash": "2a5165f0e4f23cbd53cefd5eeac64dd6f59c3aa3d2c00c5f7eb2dfaefbccd946",
+      "event_hash": "b9587e81e985f7cae8de6e580500d199941bcea946f225db4e0a0ca1d6e0266f"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-11-11T13:07:25.672986+00:00",
+      "kind": "VERIFICATION_PASS",
+      "details": {
+        "verification_sha256": "cb21f471acd8e6a549d1010a7b3d35ed6db55244e0a88847e14715a8652c760e"
+      },
+      "previous_hash": "b9587e81e985f7cae8de6e580500d199941bcea946f225db4e0a0ca1d6e0266f",
+      "event_hash": "bcfda118fd8d1d29357ca0dd8a07b01bdd0e35b5d60dd955438ef1a1bb8b4a94"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-11-11T13:07:25.673022+00:00",
+      "kind": "VERIFIED_PENDING_OPERATOR_ACCEPTANCE",
+      "details": {
+        "artifact_sha256": "6c651ac26fa328961e9c4f58534f207d46d719dccdad55ea1ec95f36d3c9753c"
+      },
+      "previous_hash": "bcfda118fd8d1d29357ca0dd8a07b01bdd0e35b5d60dd955438ef1a1bb8b4a94",
+      "event_hash": "365839b2db6fab48edd71ca364e103a02b64a3fbb649b99d67c0e2b287d93122"
+    }
+  ],
+  "fault_injected": true,
+  "state": "VERIFIED_PENDING_OPERATOR_ACCEPTANCE",
+  "payment_executed": false,
+  "marketplace_provider_contacted": false,
+  "worker_type": "Deterministic Python processes; not LLM agents or independent marketplace operators.",
+  "report_markdown": "# Marketplace comparison \u2014 r2\n\nLocal deterministic workers; no external agents hired.\n\n## Eugene\n- Marketplace: agentmarket\n- Advertised capabilities: research\n- Advertised price: Unconfirmed / unknown\n- Source: https://www.agentmarket.trade/products/eugene\n- Observed: 2026-11-10T15:58:46.064348+00:00\n\n## Academic Research\n- Marketplace: near\n- Advertised capabilities: research\n- Advertised price: 1 USDC / per_call\n- Source: https://market.near.ai/a/academic-research\n- Observed: 2026-11-10T16:14:36.210343+00:00\n\n## anybrowse\n- Marketplace: tako\n- Advertised capabilities: data_cleanup, extraction, web_search\n- Advertised price: Unconfirmed / unknown\n- Source: https://takoapi.com/agents/anybrowse\n- Observed: 2026-11-10T15:58:45.801587+00:00\n\n## Floqer\n- Marketplace: agentmarket\n- Advertised capabilities: research\n- Advertised price: Unconfirmed / unknown\n- Source: https://www.agentmarket.trade/products/floqer\n- Observed: 2026-11-10T15:58:46.064485+00:00\n\n## Azure Data Cleaner\n- Marketplace: near\n- Advertised capabilities: data_cleanup, research, verification\n- Advertised price: 0.5000 USDC / per_call\n- Source: https://market.near.ai/a/azure-data-cleaner\n- Observed: 2026-11-10T16:14:36.705626+00:00\n\n## Lane\n- Marketplace: tako\n- Advertised capabilities: extraction\n- Advertised price: Unconfirmed / unknown\n- Source: https://takoapi.com/agents/lane\n- Observed: 2026-11-10T15:58:45.799970+00:00\n\n## Limitations\n- Frozen listing evidence; current availability not checked.\n- Capabilities are listing-derived labels, not verified provider performance.\n- Per-call prices are not full-job quotes; no currency conversion is assumed.\n- No marketplace provider was contacted; no payment or buyer acceptance occurred.\n",
+  "sealed_payload_sha256": "9902118ec0477d7304b21a8626fcced9e68f5f2e473aa1fd9d4e3c1760d5a65d"
+}

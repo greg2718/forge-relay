@@ -1,0 +1,19 @@
+{
+  "$id": "forge-transaction-event/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "forge-transaction-event/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "event_id", "transaction_id", "sequence", "prior_state", "next_state", "event_type", "actor", "timestamp", "reason_code", "evidence", "data", "synthetic", "previous_hash", "event_hash", "idempotency_key"],
+  "properties": {
+    "schema": {"const": "forge-transaction-event/v1"},
+    "event_id": {"type": "string", "minLength": 1}, "transaction_id": {"type": "string", "minLength": 1},
+    "sequence": {"type": "integer", "minimum": 1},
+    "prior_state": {"type": "string"}, "next_state": {"type": "string"}, "event_type": {"type": "string"},
+    "actor": {"enum": ["BUYER", "PROVIDER", "FORGE", "ROUTER", "BENCH", "SENTINEL", "COMMERCE", "OPERATOR", "SYSTEM", "UNKNOWN", "HUMAN_REVIEW"]},
+    "timestamp": {"type": "string", "minLength": 1}, "reason_code": {"type": "string", "minLength": 1},
+    "evidence": {"type": "array", "items": {"type": "object"}}, "data": {"type": "object"},
+    "synthetic": {"const": true}, "previous_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "idempotency_key": {"type": "string", "minLength": 1}
+  }
+}

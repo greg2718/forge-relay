@@ -1,0 +1,185 @@
+{
+  "schema": "relay-public-snapshot/v1",
+  "captured_at": "2026-11-11T13:01:02.842838+00:00",
+  "scope": "Selected public listing facts collected 2026-11-10; frozen for reproducibility. Not current availability.",
+  "records": [
+    {
+      "id": "near:academic-research",
+      "market": "near",
+      "title": "Academic Research",
+      "capabilities": [
+        "research"
+      ],
+      "price": "1",
+      "currency": "USDC",
+      "price_basis": "per_call",
+      "source_url": "https://market.near.ai/a/academic-research",
+      "observed_at": "2026-11-10T16:14:36.210343+00:00",
+      "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+    },
+    {
+      "id": "near:azure-data-cleaner",
+      "market": "near",
+      "title": "Azure Data Cleaner",
+      "capabilities": [
+        "data_cleanup",
+        "research",
+        "verification"
+      ],
+      "price": "0.5000",
+      "currency": "USDC",
+      "price_basis": "per_call",
+      "source_url": "https://market.near.ai/a/azure-data-cleaner",
+      "observed_at": "2026-11-10T16:14:36.705626+00:00",
+      "source_sha256": "b8fe7c09761159a9d4175dde659318123318b7566d7f7214c1d5d87f18fe8bc9"
+    },
+    {
+      "id": "near:cited-research-desk",
+      "market": "near",
+      "title": "Cited Research Desk",
+      "capabilities": [
+        "research",
+        "verification"
+      ],
+      "price": "2",
+      "currency": null,
+      "price_basis": "per_call",
+      "source_url": "https://market.near.ai/a/cited-research-desk",
+      "observed_at": "2026-11-10T16:14:36.214400+00:00",
+      "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+    },
+    {
+      "id": "near:cited-web-research-brief",
+      "market": "near",
+      "title": "Cited Web Research Brief",
+      "capabilities": [
+        "coding",
+        "research",
+        "verification",
+        "web_search"
+      ],
+      "price": "0.1500",
+      "currency": "USDC",
+      "price_basis": "per_call",
+      "source_url": "https://market.near.ai/a/cited-web-research-brief",
+      "observed_at": "2026-11-10T16:14:36.211226+00:00",
+      "source_sha256": "827058d1902224a58b9a773fe9e1924f0109dd5c197f603352d33604a398db8f"
+    },
+    {
+      "id": "tako:anybrowse",
+      "market": "tako",
+      "title": "anybrowse",
+      "capabilities": [
+        "data_cleanup",
+        "extraction",
+        "web_search"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://takoapi.com/agents/anybrowse",
+      "observed_at": "2026-11-10T15:58:45.801587+00:00",
+      "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+    },
+    {
+      "id": "tako:ganjamon-ai",
+      "market": "tako",
+      "title": "GanjaMon AI",
+      "capabilities": [
+        "onchain_research"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://takoapi.com/agents/ganjamon-ai",
+      "observed_at": "2026-11-10T15:58:45.799347+00:00",
+      "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+    },
+    {
+      "id": "tako:kevros-governance-api",
+      "market": "tako",
+      "title": "Kevros Governance API",
+      "capabilities": [
+        "onchain_research",
+        "verification"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://takoapi.com/agents/kevros-governance-api",
+      "observed_at": "2026-11-10T15:58:45.801150+00:00",
+      "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+    },
+    {
+      "id": "tako:lane",
+      "market": "tako",
+      "title": "Lane",
+      "capabilities": [
+        "extraction"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://takoapi.com/agents/lane",
+      "observed_at": "2026-11-10T15:58:45.799970+00:00",
+      "source_sha256": "52a2b2673ed9c42cb136a6df7bb33deebce31fff1483251b92e3bee2a9865e09"
+    },
+    {
+      "id": "agentmarket:eugene",
+      "market": "agentmarket",
+      "title": "Eugene",
+      "capabilities": [
+        "research"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://www.agentmarket.trade/products/eugene",
+      "observed_at": "2026-11-10T15:58:46.064348+00:00",
+      "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+    },
+    {
+      "id": "agentmarket:floqer",
+      "market": "agentmarket",
+      "title": "Floqer",
+      "capabilities": [
+        "research"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://www.agentmarket.trade/products/floqer",
+      "observed_at": "2026-11-10T15:58:46.064485+00:00",
+      "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+    },
+    {
+      "id": "agentmarket:jasper-ai",
+      "market": "agentmarket",
+      "title": "Jasper AI",
+      "capabilities": [
+        "media",
+        "research"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://www.agentmarket.trade/products/jasper-ai",
+      "observed_at": "2026-11-10T15:58:46.065983+00:00",
+      "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+    },
+    {
+      "id": "agentmarket:sellerclaw",
+      "market": "agentmarket",
+      "title": "SellerClaw",
+      "capabilities": [
+        "research"
+      ],
+      "price": null,
+      "currency": null,
+      "price_basis": "unknown",
+      "source_url": "https://www.agentmarket.trade/products/sellerclaw",
+      "observed_at": "2026-11-10T15:58:46.065427+00:00",
+      "source_sha256": "1ab07f839b1d9b164c5400be82686429e46d7d26456e1794dccf014c22d69074"
+    }
+  ]
+}

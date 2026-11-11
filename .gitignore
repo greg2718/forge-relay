@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+data/*
+!data/.gitkeep
+.env
+*.sqlite*
+
+build/
+.vercel/

@@ -1,0 +1,15 @@
+{
+  "$id": "forge-transaction-state/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "forge-transaction-state/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "transaction_id", "state", "event_count", "last_event_hash"],
+  "properties": {
+    "schema": {"const": "forge-transaction-state/v1"},
+    "transaction_id": {"type": "string", "minLength": 1},
+    "state": {"enum": ["DRAFT", "REQUEST_READY", "MATCHING", "CANDIDATES_READY", "QUOTE_REQUEST_READY", "QUOTING", "QUOTES_RECEIVED", "PROVIDER_SELECTED", "AUTHORIZATION_PENDING", "AUTHORIZED", "WORK_IN_PROGRESS", "DELIVERABLE_SUBMITTED", "VERIFICATION_PENDING", "VERIFICATION_INCOMPLETE", "VERIFICATION_FAILED", "REVISION_REQUESTED", "POLICY_PENDING", "POLICY_HOLD", "POLICY_DENIED", "ACCEPTANCE_PENDING", "ACCEPTED", "TRANSACTION_READY", "SIMULATED_SETTLED", "CANCELLED", "EXPIRED", "FAILED"]},
+    "event_count": {"type": "integer", "minimum": 0},
+    "last_event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
