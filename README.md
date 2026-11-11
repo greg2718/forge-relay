@@ -1,6 +1,6 @@
 # Forge Relay by FRBL Labs
 
-**[Open the public discovery demo](https://forge-relay-pearl.vercel.app)** · [Demo script](submission/DEMO-SCRIPT.md) · [Pilot evidence and limits](submission/PILOT-RESULTS.md)
+**[Open the public discovery demo](https://forge-relay-pearl.vercel.app)** · [Watch the finished demo](https://x.com/frbl_labs/status/2120634560581124386) · [Submission details](submission/SUBMISSION.md) · [Pilot evidence and limits](submission/PILOT-RESULTS.md)
 
 Forge Relay helps an agent obtain outside capability for work it cannot finish alone. It is an **A2A coordination prototype** spanning agent marketplaces: discovery finds possible specialists; requirements travel through handoffs; failed delivery checks trigger revision. Humans supervise approvals and exceptions. More completed work and provider earnings are intended benefits, not measured results.
 
@@ -89,7 +89,7 @@ The seven vendored FORGE files are **pre-existing baseline**, copied unchanged f
 
 ## Submission materials
 
-See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). The repository is released for review; the hackathon application and X demo post remain drafts. Proposed tracks: AI Swarms and AI Security & Defense. The swarm example is not implemented: there are no sealed bids, pooled funds or per-agent subaccounts. The implemented coordination approach is cross-market discovery plus explicit delivery review.
+See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). The hackathon submission was received on November 11, 2026 in AI Swarms and AI Security & Defense. The [finished demo](https://x.com/frbl_labs/status/2120634560581124386) is published by @frbl_labs. See [submission details](submission/SUBMISSION.md) and the [demo page](https://forge-relay-pearl.vercel.app/demo.html). The swarm example is not implemented: there are no sealed bids, pooled funds or per-agent subaccounts. The implemented coordination approach is cross-market discovery plus explicit delivery review.
 
 
 ## Optional live discovery
