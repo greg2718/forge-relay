@@ -1,44 +1,49 @@
-# Two-minute demo script — problem, differentiation and value
+# Forge Relay demo script
 
-Purpose: explain why cross-market agent coordination matters, then use the working demo as evidence. Target 1:45–2:00 at a natural speaking pace. The narration distinguishes demonstrated behavior from intended economic value.
+Target length: about 2 minutes 30 seconds. Product: Forge Relay. Company: FRBL Labs. Record the public site and the free offline demo; use the sanitized pilot summary for the real case. Do not display account settings, tokens, private messages or billing pages. This is a recording script, not a completed video.
 
-## Narration
+## Narration and screen sequence
 
-An agent can be good at one task and still need help finishing the job. The right specialist may be in another marketplace. That creates a practical problem: how do you compare providers, hand off the work, and know whether the result meets the request?
+### 0:00–0:25 The problem
 
-In the catalogs we connected, capabilities, prices and evidence come in different forms. A listing is not a verified capability. A per-call price is not a complete-job quote. Finding a provider is only the beginning.
+Show the public task form at https://forge-relay-pearl.vercel.app.
 
-Our approach is to connect discovery across marketplaces with an explicit agreement about what a successful result must contain. We make the unknowns visible before work starts, then carry the task, evidence and acceptance criteria through the handoff.
+“An agent may be capable of one part of a job and still need a specialist to finish it. That specialist may be listed in a different marketplace. Buyers face fragmented catalogs, incompatible prices, and capability claims that do not tell them whether the work will be usable.”
 
-Here, NEAR Agent Market supplies provider and pricing discovery, plus authenticated access to its public job board. This reproducible demo uses frozen listings from NEAR and two other sources.
+### 0:25–0:50 The approach
 
-Watch what happens when the returned artifact is missing a citation. Verification rejects it. A corrected version comes back, and acceptance is tied to that exact revision. These are local deterministic workers; no marketplace agent was hired and no funds moved.
+Click Compare providers with the default research-and-extraction brief. Show a cross-market proposal and its original listing links.
 
-The value we aim to create is larger than a comparison tool: buyers spend less effort coordinating specialists, capable agents can reach demand outside their home marketplace, and marketplaces can participate in work they could not fulfill alone.
+“Forge Relay, built by FRBL Labs, connects discovery across marketplaces to explicit delivery requirements. It compares candidates and shows what is still unknown: availability, full-job price, timing and whether providers can actually work together. This is a proposal, not an automatically executed purchase.”
 
-Our next test is whether those connections turn more requests into accepted work. That is the business hypothesis. Today, we demonstrate the coordination and evidence trail needed to test it.
+### 0:50–1:20 Reproducible coordination
 
-## Screen direction
+Switch to http://127.0.0.1:8766/#demo. Run the missing-citation example. Show FAIL, revision, PASS, then the exact-version local acceptance receipt. Do not click a real NEAR hire or acceptance control.
 
-| Time | Show | Purpose |
-|---|---|---|
-| 0–20 seconds | The task brief and acceptance requirements | Start with the buyer's problem, not a tour of buttons. |
-| 20–40 seconds | Market intelligence: one NEAR listing and one other source; show pricing units and evidence | Make the comparison problem concrete. Use the frozen evidence labels. |
-| 40–65 seconds | Return to Local handoff demo; show the requirements and click Run with the missing-citation fault selected | Explain the distinct approach: shared requirements and evidence across the handoff. |
-| 65–90 seconds | Show FAIL → PASS, the returned report, then accept the verified revision locally | Provide observable proof of rejection, revision and exact-artifact acceptance. |
-| 90–110 seconds | Hold on the accepted result and export controls | Explain the intended value to buyers, agents and marketplaces. |
-| 110–120 seconds | End on the public repository URL | State the next business validation and invite inspection. |
+“Our reproducible demo sends the task through separate local extractor, writer and verifier processes. A missing citation fails the check. A corrected result passes, and the operator can accept that exact version. These workers are deterministic Python programs using frozen marketplace evidence. This sequence spends no money and does not represent independent marketplace agents.”
 
-Timing is approximate; follow the narration rather than rushing the interface. The flow runs quickly, so pause on the result while explaining the value.
+### 1:20–1:55 The real pilot
 
-## Recording setup
+Show submission/PILOT-RESULTS.md, focused on the funding, delivery, verification and dispute rows. Label this screen ‘Real NEAR pilot — operator-reported evidence’.
 
-Start `python3 -m relay.server --demo --port 8766` and open http://127.0.0.1:8766/#demo. Use a fresh run. Keep unrelated tabs and account pages out of frame. Public repository: https://github.com/greg2718/forge-relay.
+“We also funded a real fifty-cent research task through NEAR Agent Market. NEAR supplied the provider, checkout, escrow and returned results. Both deliveries failed our citation check, and human review found the requested research missing. We requested corrections, then opened a full-refund dispute. At the last confirmed check, it remained under review. We did not accept the work, and we do not claim a refund or provider payout.”
 
-## Claim boundaries
+### 1:55–2:25 Value and honest limits
 
-- The differentiator is the combination of cross-market discovery, explicit uncertainty, task acceptance criteria, revision and evidence-bound acceptance. Do not claim no one else offers these features.
-- Lower coordination cost, broader demand access and more completed work are intended benefits, not measured results. No conversion, revenue, quality or cost improvement has been established.
-- The local flow verifies consistency with frozen source evidence. It does not establish provider trust, independent factual truth or marketplace buyer acceptance.
-- NEAR discovery is implemented; onchain settlement, paid outcomes and autonomous external fulfillment are not.
-- This script does not represent a recorded or published video. The local-only submission needs an actual video; the owner records and publishes the X post.
+Return to the cross-market proposal and finish on the public repository and app links.
+
+“The value we aim to create goes beyond finding agents: buyers could coordinate specialists with less effort, providers could reach demand beyond their home marketplace, and delivery evidence could improve future selections. Our pilot proved a funded handoff, result inspection and rejection of missing evidence. It did not prove that cross-market matching produces more accepted work. That is our next measurable test.”
+
+### 2:25–2:35 Closing
+
+“Forge Relay: discover across markets, carry the requirements, inspect the result. Try the public demo or reproduce the offline workflow from our GitHub repository.”
+
+## Recording checklist
+
+- Confirm the published site loads and run one comparison before recording.
+- Start the free local demo with `python3 -m relay.server --demo --port 8766`.
+- Keep the local synthetic pass clearly separate from the real failed-delivery case.
+- Recheck the dispute status before recording; change only the outcome sentence if a decision is confirmed.
+- Never describe citation presence as factual truth, a proposal as a completed cross-market transaction, or a hash as a cryptographic attestation.
+- Add captions and a closing frame with https://forge-relay-pearl.vercel.app and https://github.com/greg2718/forge-relay.
+- Attach the recording, or screenshots of the hosted flow, to the owner's X demo post. The script itself is not the required demo post.

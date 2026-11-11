@@ -1,5 +1,7 @@
-# Optional Vercel preview package
+# Isolated Vercel deployment
 
-Run `python3 scripts/prepare_vercel.py` to produce an allowlisted deployment directory under `build/`. The snapshot preview needs no credentials, persistent storage or model API. It supports matching and proposal downloads, not live workers or authenticated job-board reads.
+Public discovery: https://forge-relay-pearl.vercel.app.
 
-No deployment is part of the hackathon demo. Evaluate commercial plan eligibility and costs before deploying. Use a separate project; never share production website or FLOP credentials. The offline local demo remains the reproducible submission path.
+Build with `python3 -B scripts/prepare_vercel.py --live`. Publish only the new allowlisted `build/vercel-*` package into a separate project. The package includes a filtered public catalog, the discovery frontend and optional buyer pilot. See [live setup](../../docs/LIVE-PILOT.md) for required private environment configuration. Secrets, session databases and authenticated job-board records must never enter the bundle.
+
+The public discovery flow works without login; the buyer pilot requires its separately configured owner connection. A successful hosted buyer hire has not been demonstrated. Local offline reproduction remains free and independent of hosting.

@@ -1,14 +1,19 @@
 # Execution and verification evidence
 
-The tested story is: browser Run action → loopback demo endpoint → fixed local extractor process → fixed writer process → returned artifact → fixed verifier process → explicit fault rejection → writer revision → verifier pass → operator acceptance of the exact hash.
+## Reproduce without accounts or spending
 
-- 57 automated tests passed, including real subprocess handoffs, negative citation/price/duplicate cases, event/handoff tampering, exact-revision acceptance, idempotent acceptance, HTTP origin boundaries and refusal of network/credential routes in offline mode.
-- Browser verified the run result `FAIL → PASS`, a six-provider report across NEAR/TakoAPI/AgentMarket, and a local acceptance receipt.
-- Screenshot: `local-demo.jpg`. It shows a verified returned artifact and acceptance receipt; it is supporting evidence, not the required demo video.
-- Offline mode uses a separate `data/offline_demo` database. The separate live NEAR session is not restarted or copied.
-- Worker programs receive JSON over stdin and return JSON over stdout. Their executable and role are fixed; no model API, marketplace endpoint or supplied code is executed. Separate processes are not represented as a security sandbox for arbitrary code.
-- The demo source snapshot contains public listing facts and original source hashes. Live source truth is not revalidated during the offline run.
-- Event and artifact hashes provide integrity checks, not cryptographic identities or immutable onchain attestations.
-- No payment, wallet signature, public posting, repository publication or hackathon submission occurred.
+Run `python3 -m unittest discover -s tests -v`, `python3 -m relay demo`, and `python3 scripts/verify_demo.py submission/sample-evidence.json` from the repository root. The current suite contains 71 tests. It covers separate worker processes, missing citations, changed values, duplicates, tampering, exact-version acceptance, HTTP origin boundaries, buyer-session isolation, quote ceilings and absence of automatic paid calls.
 
-The existing FORGE fixture rehearsal remains synthetic and separate. The new executable local handoff log records actual local work without changing the vendored simulation-only engine.
+The offline browser story is Run → extractor → writer → verifier FAIL → corrected report → PASS → explicit local acceptance. These are deterministic workers and synthetic acceptance, not an external provider success. `local-demo.jpg` and the sample evidence/report support reproduction of that offline case.
+
+## Public release
+
+https://forge-relay-pearl.vercel.app serves the public discovery snapshot. Browser comparison returned cross-market proposals; unauthenticated health and catalog endpoints responded successfully. The live buyer status endpoint returned `connected: false` to a signed-out request. The frontend uses the official FRBL Labs wordmark, white background and relaxed heading spacing.
+
+Python endpoint entry files now declare explicit handler subclasses so Vercel discovers the catalog, match, health and live routes. Production's configured origin matches the public hostname. The hosted OAuth device flow is implemented, but a full authenticated hosted hire has not been demonstrated; the real paid pilot used the separate local buyer integration.
+
+## Real external pilot
+
+See [pilot results](PILOT-RESULTS.md). A $0.50 NEAR task produced two inadequate deliveries. Citation checking and manual review rejected both. A refund dispute is under review as last confirmed on November 11, 2026. No external acceptance, successful refund or provider payout is claimed.
+
+Artifact hashes check content identity, not independent truth or immutable provenance. The offline verifier checks fidelity to a captured snapshot; the live verifier checks minimum text length and citation presence. Human review remains necessary for factual accuracy and full brief compliance.

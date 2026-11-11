@@ -6,8 +6,8 @@ Repository: `greg2718/forge-relay`. Owner approved public release and the evalua
 
 - Relay discovery, NEAR integration, matching and route proposals.
 - Executable offline worker handoff, verification, revision and local acceptance.
-- Browser UI, 57 tests, reproducible fixture, sample report/evidence and demo screenshot.
-- Optional stateless Vercel preparation; no deploy automation or credentials.
+- Browser UI, 71 tests, reproducible fixture, sample report/evidence and demo screenshot.
+- Public Vercel frontend and separate buyer-pilot preparation; credentials remain excluded.
 - Seven copied FORGE source/schema files plus their provenance manifest, approved for publication.
 - Judge instructions, source references, recording script and verification evidence.
 
@@ -25,4 +25,4 @@ Approval covers publication of the seven vendored files and authority to grant t
 
 ## Approval scope
 
-The approved contents are listed in PUBLICATION-MANIFEST.json. The proposed license was adopted as the root LICENSE; implementation files remain unchanged. No social posting, Vercel deployment, wallet action or hackathon submission is included in repository publication approval.
+The approved contents are listed in PUBLICATION-MANIFEST.json. The root LICENSE remains the approved evaluation license. On November 11 the owner separately authorized the public deployment and this repository refresh. This refresh includes reviewed frontend/routing fixes, the demo script and an anonymized pilot summary. No X posting or hackathon submission is authorized by the repository update.

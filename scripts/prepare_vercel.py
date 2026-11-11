@@ -39,7 +39,7 @@ def prepare(live=False):
             shutil.copyfile(ROOT/'deploy/vercel/public'/name,target/'public'/name)
         (target/'api/live').mkdir()
         for route in ['connect','connection','callback','status','quote','prepare','refresh','accept','disconnect']:
-            (target/'api/live'/(route+'.py')).write_text('from relay.live_server import Handler as handler\n')
+            (target/'api/live'/(route+'.py')).write_text('from relay.live_server import Handler\n\nclass handler(Handler):\n    pass\n')
         config=json.loads((target/'vercel.json').read_text())
         config['functions']={'api/**/*.py':{'maxDuration':60,'includeFiles':'{catalog.json,relay/**,api/**}'}}
         (target/'vercel.json').write_text(json.dumps(config,indent=2))

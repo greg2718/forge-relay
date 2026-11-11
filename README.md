@@ -1,6 +1,23 @@
-# FORGE Relay — NEAR Hackathon 2026
+# Forge Relay by FRBL Labs
 
-FORGE Relay compares task demand and provider listings across agent marketplaces, exposes evidence and procurement gaps, and demonstrates an auditable task-to-artifact handoff locally. Research and structured data are the initial use cases.
+**[Open the public discovery demo](https://forge-relay-pearl.vercel.app)** · [Demo script](submission/DEMO-SCRIPT.md) · [Pilot evidence and limits](submission/PILOT-RESULTS.md)
+
+Forge Relay connects fragmented agent catalogs to explicit task requirements and reviewable delivery evidence. It aims to help buyers find specialists beyond one marketplace while keeping price uncertainty and acceptance decisions visible. The hypothesis that this increases accepted work remains untested.
+
+## Try the public demo
+
+1. Open the public demo; expect a dated snapshot with provider and public demand records.
+2. Keep the example research/extraction brief and click **Compare providers**. Expect candidate listings and single- or cross-market proposals with unresolved pricing and execution conditions disclosed.
+3. Inspect source links and download a proposal. Comparing and downloading do not hire anyone or move funds.
+4. The live pilot page is an owner-configured buyer integration, not public access to our private NEAR task. A signed-out visitor sees a connection prompt. Judges need no account for discovery or the offline workflow below.
+
+The production frontend is a filtered public snapshot preview, not the full local workspace. Authenticated buyer jobs, local databases and credentials are not published. The public site uses FRBL Labs branding, a white background and readable heading spacing.
+
+## Real pilot result
+
+On November 11, 2026, an operator funded one $0.50 research task on NEAR Agent Market. Forge Relay retrieved two actual delivered revisions and failed their citation checks. Human review also found the directory research absent. An operator requested corrections and then opened a full-refund dispute after the second inadequate delivery. The last confirmed state is **dispute under review**, with a $0.0250 deposit held; refund and deposit return are not confirmed.
+
+This demonstrates a funded single-market handoff, artifact retrieval, inadequate-delivery detection and operator-led escalation. It does not demonstrate accepted external research, provider payout, completed cross-market execution, an autonomous dispute agent, or a higher conversion rate. The Bench evaluation is an isolated evidence record prepared with operator assistance; it is not an invocation of the existing FLOP Bench agent or an enforced reputation policy. See the [claim-by-claim evidence](submission/PILOT-RESULTS.md).
 
 ## Judge quick start — offline, no keys, no spending
 
@@ -39,13 +56,13 @@ Local workers are deterministic Python programs, **not LLM agents or independent
 
 ## NEAR's role and hackathon scope
 
-NEAR Agent Market supplies live provider identities, pricing plans and buyer-job discovery. New code built during the hackathon normalizes those records alongside other catalogs, compares capability/cost constraints and records local coordination evidence. The offline demo uses frozen public facts so judges can reproduce it without credentials. This project does not integrate NEAR Intents, deploy a smart contract or demonstrate trustless settlement.
+NEAR Agent Market supplies provider identities, price discovery, buyer checkout, escrow-backed task status and delivered results. The real pilot used its USD balance and operator-approved marketplace checkout; no NEAR Intents or onchain transaction is claimed. New code built during the hackathon normalizes those records alongside other catalogs, compares capability/cost constraints and records local coordination evidence. The offline demo uses frozen public facts so judges can reproduce it without credentials. This project does not integrate NEAR Intents, deploy a smart contract or demonstrate trustless settlement.
 
 The seven vendored FORGE files are **pre-existing baseline**, copied unchanged from commit `168a23bfecd67aee05b54004f6fdac3eb0992efa`; see `vendor/PROVENANCE.json`. No original FLOP runtime or repository is used. The new hackathon work is the `relay/`, `web/`, `tests/`, `fixtures/` and deployment preparation code; the first isolated project commit is `ab4b936`. The public candidate uses a fresh history for privacy; those development commits remain in the private working repository. AI coding assistance was used. The owner approved the evaluation license and publication, including the seven baseline files; see `LICENSE` and `PUBLICATION-REVIEW.md`.
 
 ## Submission materials
 
-See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). The repository is released for review; the hackathon application has not been submitted.
+See [publication review](PUBLICATION-REVIEW.md), [recording script](submission/DEMO-SCRIPT.md), and [implementation evidence](submission/VERIFICATION.md). The repository is released for review; the hackathon application and X demo post remain drafts. Proposed tracks: AI Swarms and AI Security & Defense. The swarm example is not implemented: there are no sealed bids, pooled funds or per-agent subaccounts. The implemented coordination approach is cross-market discovery plus explicit delivery review.
 
 
 ## Optional live discovery

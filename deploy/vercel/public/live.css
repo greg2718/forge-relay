@@ -1,1 +1,62 @@
 :root{font:16px/1.6 system-ui;color:#e7f2ec;background:#101c19}main{max-width:1000px;margin:auto;padding:32px}header{display:flex;gap:24px;align-items:center;flex-wrap:wrap}header strong{margin-right:auto}h1{font-size:clamp(36px,6vw,64px);line-height:1.1}section{border:1px solid #3a5148;border-radius:14px;padding:24px;margin:24px 0;background:#162720}label{display:block;margin:16px 0}input,textarea,select{display:block;box-sizing:border-box;width:100%;background:#0c1914;color:#fff;border:1px solid #6c8577;border-radius:6px;padding:12px;font:inherit}button,a{color:#baff90}button{background:#244d39;border:1px solid #6da97e;border-radius:8px;padding:12px 18px;cursor:pointer;margin:8px 8px 8px 0;font:inherit}button:disabled{opacity:.5;cursor:not-allowed}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 ui-monospace,monospace}#message{padding:16px;background:#304136;border-radius:8px}a[hidden]{display:none}
+
+/* FRBL Labs brand, matched to the public frbl.ai identity. */
+:root{--bg:#05080b;--panel:#10221b;--panel2:#142c23;--line:rgba(171,231,198,.16);--text:#f8fafc;--muted:#bac5d1;--accent:#10b981;--display:"Space Grotesk",sans-serif;--body:"DM Sans",sans-serif}
+body{background:var(--bg);color:var(--text);font-family:var(--body)}
+h1,h2,h3,.product-brand{font-family:var(--display)}
+.company-brand{display:flex;align-items:center;gap:9px;color:var(--text);text-decoration:none;font:700 25px var(--display);letter-spacing:-1.5px;flex-shrink:0}
+.company-brand .frbl-symbol{width:36px;height:36px}.company-brand b{font-weight:400}
+.product-brand{display:block;color:var(--text);font-size:18px;letter-spacing:-.4px;text-decoration:none}
+.sidebar{background:#08120f}.sidebar .product-brand{margin:18px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+.nav.active{background:#102e23;color:#aaf2c7}.button.primary{color:#041810}.eyebrow,.panel-kicker,a{color:#aaf2c7}.company-brand,.product-brand{color:var(--text)}
+.stats,.source-card{background:#0c1915}.button.secondary{background:#142c23}input,textarea,select{background:#07130e;color:var(--text)}
+.node{background:#10221b;border-color:#27634b}.node.relay{color:#041810;border-color:#164d37;box-shadow:0 0 0 10px #0c2319}
+.frbl-footer{display:block;margin:56px 0 0;padding:65px 0 28px;background:#05080b;border-top:1px solid var(--line)}
+.frbl-footer .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.frbl-footer .footer-brand{display:grid;grid-template-columns:40px 1fr;align-items:center;column-gap:10px}
+.frbl-footer .footer-brand .frbl-symbol{width:40px}
+.frbl-footer .footer-brand strong{font:700 25px var(--display);letter-spacing:-1.5px;color:#f8fafc}
+.frbl-footer .footer-brand strong span{font-weight:400;margin:0}
+.frbl-footer .footer-brand small{grid-column:1/-1;color:#7d9b88;margin-top:18px;font-size:12px}
+.frbl-footer .footer-links{display:flex;justify-content:flex-end;gap:24px;align-items:flex-start;font-size:12px}
+.frbl-footer a{color:#b9cbbd;text-decoration:none}.frbl-footer a:hover{color:#10b981;text-decoration:underline}
+.frbl-footer .footer-bottom{grid-column:1/-1;border-top:1px solid var(--line);padding-top:30px;display:flex;justify-content:space-between;color:#8eac99;font-size:11px;gap:15px}
+.frbl-footer span:last-child{margin-left:0}
+@media(max-width:800px){.frbl-footer .footer-grid{grid-template-columns:1fr;gap:30px}.frbl-footer .footer-links{justify-content:flex-start;flex-wrap:wrap}.frbl-footer .footer-bottom{flex-wrap:wrap}.sidebar .product-brand{margin:10px 0 0;padding-top:10px}.company-brand{font-size:23px}}
+
+.frbl-footer .frbl-symbol{width:40px;height:40px}body{margin:0}.company-brand{margin-right:auto}
+
+/* White FRBL Labs theme across discovery, evidence and the live pilot. */
+:root{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#f3f8f5;--line:#d7e3dc;--text:#172c23;--muted:#52675b;--accent:#087847;--gold:#805300;--red:#a52e36}
+body{background:#fff;color:var(--text)}
+.sidebar{background:#f6faf7}.nav.active,.nav:hover{background:#e6f4ec;color:#075f39}
+.company-brand,.product-brand,.frbl-footer .footer-brand strong{color:var(--text)}
+.eyebrow,.panel-kicker,a,.link-button{color:#087847}
+.stats,.source-card,section:not(.view):not(.intro){background:transparent}
+.stats{background:#f5faf7}.panel,.result-card,.market-card,.plan-card{box-shadow:0 3px 14px #163b2410}
+label{color:#334e3e}input,textarea,select{background:#fff;color:#172c23;border-color:#9eb4a6}
+input::placeholder,textarea::placeholder{color:#617768;opacity:1}
+.button.primary,button{background:#087847;color:#fff;border-color:#087847}
+.button.secondary{background:#f1f7f3;color:#244d35;border-color:#bdcfc3}
+.nav,.dialog-header button,.link-button{background:transparent;color:#52675b}
+.link-button{color:#087847}.nav.active{background:#e6f4ec;color:#075f39}
+.button:hover{filter:brightness(.94)}button:disabled,.button:disabled{background:#e9eeeb;color:#66776d;border-color:#ccd8d0;opacity:1}
+.mode,.capability-options label:has(input:checked),.pill{background:#e7f5ed;border-color:#a2cdb4;color:#075f39}
+.pill.review,.callout{background:#fff8e8;border-color:#e6ca89;color:#805300}.pill.excluded,.message.error{background:#fff0f0;border-color:#e6a9ae;color:#a52e36}
+.message,#message{background:#eef7f1;color:#245a3b;border:1px solid #bcd8c7}
+.empty{background:#fbfdfb;border-color:#b4c8bc}.result-card.excluded{opacity:1}
+.plan-card pre,.evidence-text,pre{background:#f5f8f6;color:#334e3e;border-radius:7px;padding:16px}
+.node{background:#f3faf6;border-color:#b6d5c4}.node.relay{background:#087847;color:#fff;border-color:#d0e9da;box-shadow:0 0 0 10px #f1f8f3}
+.network{background:linear-gradient(24deg,transparent 49.7%,#c3d9cc 50%,transparent 50.3%),linear-gradient(155deg,transparent 49.7%,#c3d9cc 50%,transparent 50.3%)}
+dialog{background:#fff;color:#172c23;border-color:#9eb4a6}dialog::backdrop{background:#172c2355}
+.frbl-footer{background:#fff}.frbl-footer .footer-brand small,.frbl-footer .footer-bottom,.frbl-footer a{color:#52675b}.frbl-footer a:hover{color:#087847}
+:focus-visible{outline:3px solid #087847;outline-offset:3px}
+@media(max-width:600px){.topbar{flex-wrap:wrap;padding:14px 0}.mode{white-space:normal}header{gap:14px}main{padding-left:18px;padding-right:18px}.frbl-footer{padding-top:36px}}
+
+/* More open heading typography. */
+h1{letter-spacing:-.025em;line-height:1.18;font-weight:500}
+h2{letter-spacing:0;line-height:1.35;font-weight:500}
+h3{letter-spacing:0;line-height:1.4;font-weight:500}
+
+.company-brand .frbl-wordmark{display:block;width:190px;height:auto;max-width:100%}.frbl-footer .footer-brand{display:block}.frbl-footer .frbl-wordmark{display:block;width:210px;height:auto}.frbl-footer .footer-brand small{display:block;margin-top:18px}
+@media(min-width:801px) and (max-width:1100px){.sidebar .frbl-wordmark{width:160px}}

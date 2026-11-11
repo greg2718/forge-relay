@@ -35,3 +35,7 @@ Hosted state uses atomic Redis compare-and-swap. Missing configuration fails clo
 The test suite exercises draft-to-funded-to-result-to-review behavior with fixtures, idempotent retries after timeout, quote ceilings, access boundaries, CSRF, OAuth state replay, exact artifact review, storage atomicity, and the absence of automatic paid tool calls. Passing fixture tests does not prove the live provider has been hired or delivered work.
 
 Before publishing a result, record the actual provider, complete charge including fees, job URL, returned artifact digest, buyer acceptance and any unsupported claims. Do not include OAuth tokens, registration responses, financial details or private buyer briefs in the public repository.
+
+## Observed pilot outcome
+
+The first live task was funded and produced two artifacts that failed review. Correction and dispute actions were performed by an operator in NEAR, not by the application. The latest confirmed dispute is pending. See [pilot evidence](../submission/PILOT-RESULTS.md). The public host is https://forge-relay-pearl.vercel.app; configured origin must match it. Hosted authentication is not claimed as fully exercised by that local pilot.
