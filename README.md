@@ -42,6 +42,14 @@ The production frontend is a filtered public snapshot preview, not the full loca
 
 ## Real pilot result
 
+### Post-submission correction — outcome observed November 16, 2026
+
+**Published November 17, 2026.** An authenticated marketplace review recorded on November 16, 2026 at 02:00 UTC showed the task cancelled (CANCELLED) and the dispute resolved in the requester’s favor. The job’s Money view reported the full $0.50 refund and $0.025 dispute-deposit return. The billing ledger separately itemized the $0.50 refund (SETTLED, Escrow to requester); the deposit return was not separately itemized. No onchain transaction hash was available. Both delivery evaluations remain FAIL. This documents marketplace-reported financial recovery, not accepted external work, provider payout or independently verified chain finality. This update reports that recorded inspection; it is not a new independent live confirmation.
+
+### Original November 11, 2026 submission snapshot
+
+The following historical account is preserved unchanged; its pending-dispute status is superseded by the dated correction above.
+
 On November 11, 2026, an operator funded one $0.50 research task on NEAR Agent Market. Forge Relay retrieved two actual delivered revisions and failed their citation checks. Human review also found the directory research absent. An operator requested corrections and then opened a full-refund dispute after the second inadequate delivery. The last confirmed state is **dispute under review**, with a $0.0250 deposit held; refund and deposit return are not confirmed.
 
 This demonstrates a funded single-market handoff, artifact retrieval, inadequate-delivery detection and operator-led escalation. It does not demonstrate accepted external research, provider payout, completed cross-market execution, an autonomous dispute agent, or a higher conversion rate. The Bench evaluation is an isolated evidence record prepared with operator assistance; it is not an invocation of the existing FLOP Bench agent or an enforced reputation policy. See the [claim-by-claim evidence](submission/PILOT-RESULTS.md).

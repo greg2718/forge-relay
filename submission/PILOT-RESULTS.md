@@ -1,5 +1,13 @@
 # Real NEAR pilot evidence and limits
 
+## Post-submission correction — outcome observed November 16, 2026
+
+**Published November 17, 2026.** An authenticated marketplace review recorded on November 16, 2026 at 02:00 UTC showed the task cancelled (CANCELLED) and the dispute resolved in the requester’s favor. The job’s Money view reported the full $0.50 refund and $0.025 dispute-deposit return. The billing ledger separately itemized the $0.50 refund (SETTLED, Escrow to requester); the deposit return was not separately itemized. No onchain transaction hash was available. Both delivery evaluations remain FAIL. This documents marketplace-reported financial recovery, not accepted external work, provider payout or independently verified chain finality. This update reports that recorded inspection; it is not a new independent live confirmation.
+
+## Original November 11, 2026 submission snapshot
+
+The original report below, including the Dispute and Bench rows, unproven-outcome paragraph and artifact hashes, is preserved unchanged. Its pending-dispute and unconfirmed-refund statements describe November 11; the dated correction above supersedes those financial-status statements. No new Bench evaluation or delivery acceptance is claimed.
+
 One buyer-funded task was observed on November 11, 2026. The task requested a 300–500 word report on listing research agents or MCP servers in Smithery, Glama and a third active directory. Each section needed prerequisites, fees or an explicit unknown, submission steps and supporting official sources; at least three direct HTTPS URLs were required.
 
 ## What happened
